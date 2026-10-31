@@ -1,1567 +1,247 @@
-<html class="js native-share--enabled" lang="pt" dir="ltr" style="--header-height: 60px;"><head><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),yt=(c,r)=>{for(let d=c;d;d=Object.getPrototypeOf(d)){let g=Object.getOwnPropertyDescriptor(d,r);if(g)return g}throw new TypeError(`${r} is not defined`)},u=(c,r)=>s(yt(c,r).get),B=(c,r)=>s(yt(c,r).set);var Et=s(String.prototype.endsWith),Pe=s(String.prototype.slice),_=s(RegExp.prototype.exec),Ae=/^_(self|top|parent)$/i,Le=/(^|\s)noreferrer(\s|$)/i,mt=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,We=/^(never|default|always|origin-when-crossorigin)$/i,wt=/^(no-referrer|same-origin|never)$/i,Ie=/\s(musical_ly|trill)_|\sBytedanceWebview\//,ht=c=>Et(c,".")?Pe(c,0,-1):c,_t=c=>{let r=ht(c),d=`.${r}`;return g=>{let m=ht(g);return m===r||Et(m,d)}},bt=(c,r,d)=>c!==void 0&&(c.protocol==="https:"||c.protocol==="http:")&&c.origin!==r&&!d(c.hostname),kt=(c,r,d)=>c!==null&&_(Le,c)!==null?!0:r!==null&&_(mt,r)!==null?_(wt,r)!==null:d,vt=(c,r)=>_(mt,c)!==null||_(We,c)!==null?_(wt,c)!==null:r,L=(c,{metaKey:r,ctrlKey:d,shiftKey:g,button:m})=>c&&_(Ae,c)===null?c:r||d||g||m===1?"_blank":"",Nt=c=>_(Ie,c)!==null;var Te="http://www.w3.org/2000/svg",Me="http://www.w3.org/1999/xlink",G=["rel","referrerpolicy","download","ping","hreflang","type"];function St(c){let r=window;if(r.top!==r)return;let d=document,g=r.navigation,m=location.origin,N=URL,q=u(N.prototype,"href"),Rt=u(N.prototype,"origin"),xt=u(N.prototype,"protocol"),Ot=u(N.prototype,"hostname"),Y=s(Event.prototype.preventDefault),Pt=s(Event.prototype.stopPropagation),j=s(Event.prototype.stopImmediatePropagation),V=s(Event.prototype.composedPath),At=u(Event.prototype,"type"),Lt=u(Event.prototype,"cancelable"),X=u(Event.prototype,"defaultPrevented"),Wt=u(Event.prototype,"bubbles"),It=u(Event.prototype,"currentTarget"),Tt=u(Event.prototype,"eventPhase"),{CAPTURING_PHASE:Mt}=Event,z=u(Event.prototype,"cancelBubble"),Ct=B(Event.prototype,"cancelBubble"),Dt=u(MouseEvent.prototype,"button"),Ft=u(MouseEvent.prototype,"metaKey"),Ht=u(MouseEvent.prototype,"ctrlKey"),$t=u(MouseEvent.prototype,"shiftKey"),Kt=g&&u(NavigateEvent.prototype,"destination"),Ut=g&&u(NavigationDestination.prototype,"url"),J=g&&u(NavigateEvent.prototype,"navigationType"),Bt=g&&u(NavigateEvent.prototype,"formData"),Q=g&&"sourceElement"in NavigateEvent.prototype?u(NavigateEvent.prototype,"sourceElement"):void 0,w=s(Element.prototype.getAttribute),Gt=s(Element.prototype.getAttributeNS),W=s(Element.prototype.setAttribute),qt=u(Element.prototype,"localName"),Yt=u(Element.prototype,"namespaceURI"),jt=s(Document.prototype.querySelector),Vt=s(Document.prototype.querySelectorAll),Xt=u(NodeList.prototype,"length"),zt=s(NodeList.prototype.item),I=u(Node.prototype,"baseURI"),Jt=s(Document.prototype.createElement),Qt=s(HTMLElement.prototype.click),Zt=s(r.open),te=s(location.assign),ee=s(location.replace),ne=encodeURIComponent,oe=s(String.prototype.startsWith),Z=s(r.setTimeout),re=s(r.addEventListener),se=s(r.removeEventListener),tt=s(EventTarget.prototype.addEventListener),et=s(EventTarget.prototype.removeEventListener),nt=Object.defineProperties,ot=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,r];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:u(n[o],t),set:B(n[o],t)}}catch{}return e},ce={click:ot("onclick"),auxclick:ot("onauxclick")},rt=WeakMap,ie=WeakSet,st=s(WeakMap.prototype.get),ae=s(WeakMap.prototype.set),le=s(WeakMap.prototype.delete),ue=s(WeakSet.prototype.add),pe=s(WeakSet.prototype.has),fe=_t(c.site),de=Nt(navigator.userAgent),ct=q(new N(c.exitPath,m)),ge=`${ct}?`,O=(t,e)=>{try{let n=new N(t,e);return{href:q(n),origin:Rt(n),protocol:xt(n),hostname:Ot(n)}}catch{return}},ye=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${ct}?q=${ne(t.href)}&trigger=${e}${o}`},it=()=>{let t=Vt(d,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Xt(t);n+=1)e=vt(w(zt(t,n),"content"),e);return e},at=(t,e,{target:n,noReferrer:o,replaces:a})=>{let f=ye(t,e,o);if(n){Zt(r,f,n,"noopener");return}(a?ee:te)(location,f)},T=t=>bt(t,m,fe),P=0,M,C=!1,he=t=>{if(P>0){M=t;return}t()},Ee=t=>{if(P-=1,t&&(C=!0),P>0)return;let e=C?void 0:M;M=void 0,C=!1,e&&e()},me=t=>t!==void 0&&oe(t.href,ge),lt=t=>{try{return qt(t)}catch{return}},ut=t=>kt(w(t,"rel"),w(t,"referrerpolicy"),it()),we=t=>{let e=Q?Q(t):null,n=e===null?void 0:lt(e);return n==="a"||n==="area"?ut(e):it()},_e=t=>{let e=O(Ut(Kt(t)));if(me(e)){j(t);return}if(!Lt(t)||J(t)==="traverse"||!T(e)||Bt(t)!==null)return;Y(t);let n={target:"",noReferrer:we(t),replaces:J(t)==="replace"};he(()=>at(e,"navigate",n))},R=t=>{let e=w(t,"href");return e===null&&Yt(t)===Te?Gt(t,Me,"href"):e},be=t=>{let e=V(t);for(let n=0;n<e.length;n+=1){let o=e[n],a=lt(o);if(a==="a"||a==="area"){let f=R(o);if(f!==null)return{node:o,href:f}}}},D=t=>{let e=w(t,"target");if(e!==null)return e;let n=jt(d,"base[target]");return n?w(n,"target"):""},ke=t=>{try{return{metaKey:Ft(t),ctrlKey:Ht(t),shiftKey:$t(t),button:Dt(t)}}catch{return}},pt=new ie,ve=t=>{let e=!1,n=()=>{e=!0},o=()=>e||pe(pt,t);return nt(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:a=>{a||n()}}}),o},Ne={click:new rt,auxclick:new rt},Se=(t,e)=>{let n=ce[t],o=Ne[t],a=[],f=p=>{for(let l=0;l<a.length;l+=1)if(a[l]===p)return!0;return!1},b=(p,l,E)=>{let y=s(E);function A(v){let x=y(this,v);return x===!1&&typeof v=="object"&&v!==null&&ue(pt,v),x}return{target:p,accessor:l,handler:E,wrapper:A,inFlight:0}},k=()=>{for(let p=0;p<e.length;p+=1)for(let l=0;l<n.length;l+=1){let E;try{E=n[l].get(e[p])}catch{continue}if(typeof E=="function"){let y=st(o,e[p]);(!y||y.wrapper!==E)&&(y=b(e[p],n[l],E),n[l].set(e[p],y.wrapper),ae(o,e[p],y)),f(y)||(y.inFlight+=1,a[a.length]=y)}break}};return k(),{wrap:k,unwrap:()=>{for(let p=0;p<a.length;p+=1){let l=a[p];l.inFlight-=1,!(l.inFlight>0)&&(st(o,l.target)===l&&le(o,l.target),l.accessor.get(l.target)===l.wrapper&&l.accessor.set(l.target,l.handler))}}}},ft=(t,e,n)=>{let o=R(t),a=o===null?void 0:O(o,I(d));if(!T(a))return;let f={target:de?"":L(D(t),n),noReferrer:ut(t),replaces:!1};return{inWindow:f.target==="",go:()=>at(a,e,f)}},dt=t=>{let e=R(t);if(e===null||w(t,"download")===null)return!1;let n=O(e,I(d));return n!==void 0&&(n.origin===m||n.protocol==="blob:"||n.protocol==="data:")},Re=(t,e)=>R(t)!==null&&!dt(t)&&L(D(t),e)==="",xe=(t,e)=>{let n=R(t);if(n===null)return!1;let o=Jt(d,"a"),a=L(D(t),e);W(o,"href",n),W(o,"target",a||"_self");for(let f=0;f<G.length;f+=1){let b=w(t,G[f]);b!==null&&W(o,G[f],b)}return Qt(o),a===""&&!dt(t)},Oe=(t,e,n,o)=>{P+=1;let a=V(t),f=a.length-1,b=0,k=!1,F=!1,p=i=>{F||(F=!0,Ee(i))},l=i=>{if(k)return;k=!0;let S=X(t),h=S?void 0:ft(n,e,o),U;!S&&(h||i)&&(Y(t),U=ve(t)),Z(r,()=>{if(!U){p(!X(t)&&Re(n,o));return}if(U()){p(!1);return}if(i&&(h=ft(n,e,o),!h)){p(xe(n,o));return}h.go(),p(h.inWindow)},0)},E=(i,S)=>{for(let h=0;h<a.length;h+=1)if(a[h]===i)return S===Mt?f-h:a.length+h;return-1},y=()=>{E(It(t),Tt(t))<=b&&l(!0)},A=i=>{i===t&&l(!1)},v=Se(e,a),x=i=>S=>{if(S===t){if(b=i,z(t)){l(!1);return}v.wrap()}},H=[],$=[],K=Wt(t);if(K){for(let i=0;i<f;i+=1)H[i]=x(f-i),$[i]=x(a.length+i),tt(a[i],e,H[i],!0),tt(a[i],e,$[i],!1);re(r,e,A,!1)}if(Z(r,()=>{if(k||p(!1),k=!0,v.unwrap(),!!K){for(let i=0;i<f;i+=1)et(a[i],e,H[i],!0),et(a[i],e,$[i],!1);se(r,e,A,!1)}},0),!K){l(!0);return}nt(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{y(),Pt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{l(!0),j(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>z(t),set:i=>{i&&y(),Ct(t,i)}}})},gt=t=>{let e=At(t),n=ke(t);if(!n||e==="auxclick"&&n.button!==1)return;let o=be(t);!o||!T(O(o.href,I(d)))||Oe(t,e,o.node,n)};g?.addEventListener("navigate",_e,!0),r.addEventListener("click",gt,!0),r.addEventListener("auxclick",gt,!0)}St({"site":"millab.com","exitPath":"\/url"});})();
-//# sourceURL=exit-interstitial.js
-</script>
-<script data-source-attribution="shopify.event_observer.bootstrap">
-(function(){let e=navigator,t=`prototype`,n=`sendBeacon`,r=e[n],i=fetch,a=XMLHttpRequest[t],{open:o,send:s}=a,c=`EventListener`,l=`add${c}`,u=`remove${c}`,d=EventTarget[t],f=d[l],p=d[u],m=e=>Error((e=document.currentScript)&&[e?.src,e?.id||e?.dataset?.sourceAttribution]),h=(e=[],t=0)=>(e.p=n=>e[t++%1e3]=n,[e,t=>(e.forEach(e.p=t),e.length=0)]),[g,_]=h(),[v,y]=h(),b,x=new WeakMap,S=e=>e&&g.p([e,b||[m()]]);d[l]=function(e,t,n){let r=this,i=t?.handleEvent||t,a=x.get(t),o=m();i?.call&&!a&&x.set(t,a=function(e){b=[o,e.type];try{i.call(t==i?this:t,e)}finally{b=null}}),v.p([e,o,a,r?.tagName||r+``,r?.id]),f.call(r,e,a||t,n)},d[u]=function(e,t,n){p.call(this,e,x.get(t)||t,n)},a.open=function(e,t){x.set(this,[t+``,e]),o.apply(this,arguments)},a.send=function(e){S(x.get(this)),s.call(this,e)},fetch=(e,t)=>(S([(e?.url||e)+``,t?.method]),i(e,t)),e[n]=(t,n)=>(S([t+``,``]),r.call(e,t,n)),setTimeout(()=>import("//millab.com/cdn/shopifycloud/storefront/assets/storefront/event_observer_reporter-ed358274.js").then(e=>e.$(_,y,f,i,`83782926653`)))})();
-//# sourceURL=event-observer-collector.js
-</script>
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="theme-color" content="#333333">
-
-    <title>Millab — Moinhos de café</title><meta name="description" content="Criado pelas mesmas mentes por trás do equipamento de café premiado da Timemore, o Timemore × Millab M01 é um moinho manual premium feito para elevar o teu ritual diário de café. Equilibra estética, satisfação tátil e um desempenho de moagem sério — até às mós."><link rel="canonical" href="https://millab.com/"><link rel="shortcut icon" href="images/icon_e3aa151f-4b94-4d81-b2cd-29f810ef9e0c.png">
-      <link rel="apple-touch-icon" href="images/icon_e3aa151f-4b94-4d81-b2cd-29f810ef9e0c.png"><link rel="preconnect" href="https://cdn.shopify.com">
-    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin="">
-    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com"><link rel="preload" href="fonts/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="fonts/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2" as="font" type="font/woff2" crossorigin=""><meta property="og:type" content="website">
-  <meta property="og:title" content="Millab — Moinhos de café"><meta property="og:image" content="http://millab.com/cdn/shop/files/DSC09690_4dafd53c-d266-4561-8667-5cb5bbcafbd0.jpg?v=1749813509&amp;width=2048">
-  <meta property="og:image:secure_url" content="https://millab.com/cdn/shop/files/DSC09690_4dafd53c-d266-4561-8667-5cb5bbcafbd0.jpg?v=1749813509&amp;width=2048">
-  <meta property="og:image:width" content="3000">
-  <meta property="og:image:height" content="1650"><meta property="og:description" content="Criado pelas mesmas mentes por trás do equipamento de café premiado da Timemore, o Timemore × Millab M01 é um moinho manual premium feito para elevar o teu ritual diário de café. Equilibra estética, satisfação tátil e um desempenho de moagem sério — até às mós."><meta property="og:url" content="https://millab.com/">
-<meta property="og:site_name" content="Millab"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="https://millab.com/products/m01">
-  <meta name="twitter:description" content="Criado pelas mesmas mentes por trás do equipamento de café premiado da Timemore, o Timemore × Millab M01 é um moinho manual premium feito para elevar o teu ritual diário de café. Equilibra estética, satisfação tátil e um desempenho de moagem sério — até às mós."><meta name="twitter:image" content="https://millab.com/cdn/shop/files/DSC09690_4dafd53c-d266-4561-8667-5cb5bbcafbd0.jpg?crop=center&amp;height=1200&amp;v=1749813509&amp;width=1200">
-  <meta name="twitter:image:alt" content="">
-
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-  "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://millab.com"
-    }]
-  }
-  </script>
-
-<script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Millab",
-      "url": "https:\/\/millab.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https:\/\/millab.com\/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Millab","logo": "https:\/\/millab.com\/cdn\/shop\/files\/millab_logo.svg?v=1706263975\u0026width=120","url": "https:\/\/millab.com"
-    }
-  ]
-  </script><style>/* Typography (heading) */
-  @font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-  src: url('images/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2') format("woff2"),
-       url('images/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: italic;
-  font-display: fallback;
-  src: url('images/jost_i4.b690098389649750ada222b9763d55796c5283a5.woff2') format("woff2"),
-       url('images/jost_i4.fd766415a47e50b9e391ae7ec04e2ae25e7e28b0.woff') format("woff");
-}
-
-/* Typography (body) */
-  @font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-  src: url('images/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2') format("woff2"),
-       url('images/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: italic;
-  font-display: fallback;
-  src: url('images/jost_i4.b690098389649750ada222b9763d55796c5283a5.woff2') format("woff2"),
-       url('images/jost_i4.fd766415a47e50b9e391ae7ec04e2ae25e7e28b0.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 700;
-  font-style: normal;
-  font-display: fallback;
-  src: url('images/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2') format("woff2"),
-       url('images/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 700;
-  font-style: italic;
-  font-display: fallback;
-  src: url('images/jost_i7.d8201b854e41e19d7ed9b1a31fe4fe71deea6d3f.woff2') format("woff2"),
-       url('images/jost_i7.eae515c34e26b6c853efddc3fc0c552e0de63757.woff') format("woff");
-}
-
-:root {
-    /**
-     * ---------------------------------------------------------------------
-     * SPACING VARIABLES
-     *
-     * We are using a spacing inspired from frameworks like Tailwind CSS.
-     * ---------------------------------------------------------------------
-     */
-    --spacing-0-5: 0.125rem; /* 2px */
-    --spacing-1: 0.25rem; /* 4px */
-    --spacing-1-5: 0.375rem; /* 6px */
-    --spacing-2: 0.5rem; /* 8px */
-    --spacing-2-5: 0.625rem; /* 10px */
-    --spacing-3: 0.75rem; /* 12px */
-    --spacing-3-5: 0.875rem; /* 14px */
-    --spacing-4: 1rem; /* 16px */
-    --spacing-4-5: 1.125rem; /* 18px */
-    --spacing-5: 1.25rem; /* 20px */
-    --spacing-5-5: 1.375rem; /* 22px */
-    --spacing-6: 1.5rem; /* 24px */
-    --spacing-6-5: 1.625rem; /* 26px */
-    --spacing-7: 1.75rem; /* 28px */
-    --spacing-7-5: 1.875rem; /* 30px */
-    --spacing-8: 2rem; /* 32px */
-    --spacing-8-5: 2.125rem; /* 34px */
-    --spacing-9: 2.25rem; /* 36px */
-    --spacing-9-5: 2.375rem; /* 38px */
-    --spacing-10: 2.5rem; /* 40px */
-    --spacing-11: 2.75rem; /* 44px */
-    --spacing-12: 3rem; /* 48px */
-    --spacing-14: 3.5rem; /* 56px */
-    --spacing-16: 4rem; /* 64px */
-    --spacing-18: 4.5rem; /* 72px */
-    --spacing-20: 5rem; /* 80px */
-    --spacing-24: 6rem; /* 96px */
-    --spacing-28: 7rem; /* 112px */
-    --spacing-32: 8rem; /* 128px */
-    --spacing-36: 9rem; /* 144px */
-    --spacing-40: 10rem; /* 160px */
-    --spacing-44: 11rem; /* 176px */
-    --spacing-48: 12rem; /* 192px */
-    --spacing-52: 13rem; /* 208px */
-    --spacing-56: 14rem; /* 224px */
-    --spacing-60: 15rem; /* 240px */
-    --spacing-64: 16rem; /* 256px */
-    --spacing-72: 18rem; /* 288px */
-    --spacing-80: 20rem; /* 320px */
-    --spacing-96: 24rem; /* 384px */
-
-    /* Container */
-    --container-max-width: 1600px;
-    --container-narrow-max-width: 1350px;
-    --container-gutter: var(--spacing-5);
-    --section-outer-spacing-block: var(--spacing-8);
-    --section-inner-max-spacing-block: var(--spacing-8);
-    --section-inner-spacing-inline: var(--container-gutter);
-    --section-stack-spacing-block: var(--spacing-8);
-
-    /* Grid gutter */
-    --grid-gutter: var(--spacing-5);
-
-    /* Product list settings */
-    --product-list-row-gap: var(--spacing-8);
-    --product-list-column-gap: var(--grid-gutter);
-
-    /* Form settings */
-    --input-gap: var(--spacing-2);
-    --input-height: 2.625rem;
-    --input-padding-inline: var(--spacing-4);
-
-    /* Other sizes */
-    --sticky-area-height: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px) + var(--sticky-header-enabled, 0) * var(--header-height, 0px));
-
-    /* RTL support */
-    --transform-logical-flip: 1;
-    --transform-origin-start: left;
-    --transform-origin-end: right;
-
-    /**
-     * ---------------------------------------------------------------------
-     * TYPOGRAPHY
-     * ---------------------------------------------------------------------
-     */
-
-    /* Font properties */
-    
-      --heading-font-family: Futura LT;
-      --heading-font-weight: 900;
-      --heading-font-style: normal;
-    
-    
-    
-      --text-font-family: Futura LT;
-      --text-font-weight: 400;
-      --text-font-style: normal;
-    
-    
-    --heading-text-transform: normal;
-    --heading-letter-spacing: 0.0em;
-    --text-letter-spacing: 0.0em;
-
-    /* Font sizes */
-    --text-h0: 2.75rem;
-    --text-h1: 2rem;
-    --text-h2: 1.75rem;
-    --text-h3: 1.375rem;
-    --text-h4: 1.125rem;
-    --text-h5: 1.125rem;
-    --text-h6: 1rem;
-    --text-xs: 0.6875rem;
-    --text-sm: 0.75rem;
-    --text-base: 0.875rem;
-    --text-lg: 1.125rem;
-
-    /**
-     * ---------------------------------------------------------------------
-     * COLORS
-     * ---------------------------------------------------------------------
-     */
-
-    /* Color settings */--accent: 51 51 51;
-    --text-primary: 51 51 51;
-    --background-primary: 246 246 246;
-    --dialog-background: 255 255 255;
-    --border-color: var(--text-color, var(--text-primary)) / 0.12;
-
-    /* Button colors */
-    --button-background-primary: 51 51 51;
-    --button-text-primary: 255 255 255;
-    --button-background-secondary: 134 111 77;
-    --button-text-secondary: 255 255 255;
-
-    /* Status colors */
-    --success-background: 224 244 232;
-    --success-text: 0 163 65;
-    --warning-background: 255 246 233;
-    --warning-text: 255 183 74;
-    --error-background: 254 231 231;
-    --error-text: 248 58 58;
-
-    /* Product colors */
-    --on-sale-text: 248 58 58;
-    --on-sale-badge-background: 248 58 58;
-    --on-sale-badge-text: 255 255 255;
-    --sold-out-badge-background: 0 0 0;
-    --sold-out-badge-text: 255 255 255;
-    --primary-badge-background: 128 60 238;
-    --primary-badge-text: 255 255 255;
-    --star-color: 255 183 74;
-    --product-card-background: 246 246 246;
-    --product-card-text: 26 26 26;
-
-    /* Header colors */
-    --header-background: 51 51 51;
-    --header-text: 255 255 255;
-
-    /* Footer colors */
-    --footer-background: 245 245 245;
-    --footer-text: 51 51 51;
-
-    /* Rounded variables (used for border radius) */
-    --rounded-xs: 0.25rem;
-    --rounded-sm: 0.375rem;
-    --rounded: 0.75rem;
-    --rounded-lg: 1.5rem;
-    --rounded-full: 9999px;
-
-    --rounded-button: 0.25rem;
-    --rounded-input: 0.5rem;
-
-    /* Box shadow */
-    --shadow-sm: 0 2px 8px rgb(var(--text-primary) / 0.1);
-    --shadow: 0 5px 15px rgb(var(--text-primary) / 0.1);
-    --shadow-md: 0 5px 30px rgb(var(--text-primary) / 0.1);
-    --shadow-block: 0px 18px 50px rgb(var(--text-primary) / 0.1);
-
-    /**
-     * ---------------------------------------------------------------------
-     * OTHER
-     * ---------------------------------------------------------------------
-     */
-
-    --cursor-close-svg-url: url('images/cursor-close.svg');
-    --cursor-zoom-in-svg-url: url('images/cursor-zoom-in.svg');
-    --cursor-zoom-out-svg-url: url('images/cursor-zoom-out.svg');
-    --checkmark-svg-url: url('images/checkmark.svg');
-  }
-
-  [dir="rtl"]:root {
-    /* RTL support */
-    --transform-logical-flip: -1;
-    --transform-origin-start: right;
-    --transform-origin-end: left;
-  }
-
-  @media screen and (min-width: 700px) {
-    :root {
-      /* Typography (font size) */
-      --text-h0: 3.5rem;
-      --text-h1: 2.5rem;
-      --text-h2: 2rem;
-      --text-h3: 1.625rem;
-      --text-h4: 1.375rem;
-      --text-h5: 1.125rem;
-      --text-h6: 1rem;
-
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1.0rem;
-      --text-lg: 1.25rem;
-
-      /* Spacing */
-      --container-gutter: 2rem;
-      --section-outer-spacing-block: var(--spacing-12);
-      --section-inner-max-spacing-block: var(--spacing-10);
-      --section-inner-spacing-inline: var(--spacing-12);
-      --section-stack-spacing-block: var(--spacing-10);
-
-      /* Grid gutter */
-      --grid-gutter: var(--spacing-6);
-
-      /* Product list settings */
-      --product-list-row-gap: var(--spacing-12);
-
-      /* Form settings */
-      --input-gap: 1rem;
-      --input-height: 3.125rem;
-      --input-padding-inline: var(--spacing-5);
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    :root {
-      /* Spacing settings */
-      --container-gutter: var(--spacing-12);
-      --section-outer-spacing-block: var(--spacing-14);
-      --section-inner-max-spacing-block: var(--spacing-12);
-      --section-inner-spacing-inline: var(--spacing-16);
-      --section-stack-spacing-block: var(--spacing-10);
-    }
-  }
-
-  @media screen and (min-width: 1150px) {
-    :root {
-      /* Spacing settings */
-      --container-gutter: var(--spacing-12);
-      --section-outer-spacing-block: var(--spacing-14);
-      --section-inner-max-spacing-block: var(--spacing-12);
-      --section-inner-spacing-inline: var(--spacing-16);
-      --section-stack-spacing-block: var(--spacing-12);
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    :root {
-      /* Typography (font size) */
-      --text-h0: 4.5rem;
-      --text-h1: 3.5rem;
-      --text-h2: 2.75rem;
-      --text-h3: 2rem;
-      --text-h4: 1.75rem;
-      --text-h5: 1.375rem;
-      --text-h6: 1.25rem;
-
-      --section-outer-spacing-block: var(--spacing-16);
-      --section-inner-max-spacing-block: var(--spacing-14);
-      --section-inner-spacing-inline: var(--spacing-18);
-    }
-  }
-
-  @media screen and (min-width: 1600px) {
-    :root {
-      --section-outer-spacing-block: var(--spacing-16);
-      --section-inner-max-spacing-block: var(--spacing-16);
-      --section-inner-spacing-inline: var(--spacing-20);
-    }
-  }
-
-  /**
-   * ---------------------------------------------------------------------
-   * LIQUID DEPENDANT CSS
-   *
-   * Our main CSS is Liquid free, but some very specific features depend on
-   * theme settings, so we have them here
-   * ---------------------------------------------------------------------
-   */@media screen and (pointer: fine) {
-        .button:not([disabled]):hover, .btn:not([disabled]):hover, .shopify-payment-button__button--unbranded:not([disabled]):hover {
-          --button-background-opacity: 0.85;
-        }
-
-        .button--subdued:not([disabled]):hover {
-          --button-background: var(--text-color) / .05 !important;
-        }
-      }</style><script>
-  document.documentElement.classList.replace('no-js', 'js');
-
-  // This allows to expose several variables to the global scope, to be used in scripts
-  window.themeVariables = {
-    settings: {
-      showPageTransition: true,
-      headingApparition: "split_fade",
-      pageType: "index",
-      moneyFormat: "${{amount}}",
-      moneyWithCurrencyFormat: "${{amount}} USD",
-      currencyCodeEnabled: false,
-      cartType: "page",
-      showDiscount: true,
-      discountMode: "saving"
-    },
-
-    strings: {
-      accessibilityClose: "Close",
-      accessibilityNext: "Next",
-      accessibilityPrevious: "Previous",
-      addToCartButton: "Add to cart",
-      soldOutButton: "Sold out",
-      preOrderButton: "Pre-order",
-      unavailableButton: "Unavailable",
-      closeGallery: "Close gallery",
-      zoomGallery: "Zoom",
-      errorGallery: "Image cannot be loaded",
-      soldOutBadge: "Sold out",
-      discountBadge: "Save @@",
-      sku: "SKU:",
-      searchNoResults: "No results could be found.",
-      addOrderNote: "Add order note",
-      editOrderNote: "Edit order note",
-      shippingEstimatorNoResults: "Sorry, we do not ship to your address.",
-      shippingEstimatorOneResult: "There is one shipping rate for your address:",
-      shippingEstimatorMultipleResults: "There are several shipping rates for your address:",
-      shippingEstimatorError: "One or more error occurred while retrieving shipping rates:"
-    },
-
-    breakpoints: {
-      'sm': 'screen and (min-width: 700px)',
-      'md': 'screen and (min-width: 1000px)',
-      'lg': 'screen and (min-width: 1150px)',
-      'xl': 'screen and (min-width: 1400px)',
-
-      'sm-max': 'screen and (max-width: 699px)',
-      'md-max': 'screen and (max-width: 999px)',
-      'lg-max': 'screen and (max-width: 1149px)',
-      'xl-max': 'screen and (max-width: 1399px)'
-    }
-  };window.addEventListener('DOMContentLoaded', () => {
-      const isReloaded = (window.performance.navigation && window.performance.navigation.type === 1) || window.performance.getEntriesByType('navigation').map((nav) => nav.type).includes('reload');
-
-      if ('animate' in document.documentElement && window.matchMedia('(prefers-reduced-motion: no-preference)').matches && document.referrer.includes(location.host) && !isReloaded) {
-        document.body.animate({opacity: [0, 1]}, {duration: 115, fill: 'forwards'});
-      }
-    });
-
-    window.addEventListener('pageshow', (event) => {
-      document.body.classList.remove('page-transition');
-
-      if (event.persisted) {
-        document.body.animate({opacity: [0, 1]}, {duration: 0, fill: 'forwards'});
-      }
-    });// For detecting native share
-  document.documentElement.classList.add(`native-share--${navigator.share ? 'enabled' : 'disabled'}`);</script><script type="module" src="js/vendor.min.js"></script>
-    <script type="module" src="js/theme.js"></script>
-    <script type="module" src="js/sections.js"></script>
-
-    <style data-shopify="">
-
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Light.ttf') format("truetype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Book.ttf') format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Medium.ttf') format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Bold.ttf') format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Extra_Bold.ttf') format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Light_Oblique.ttf') format("truetype");
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Book_Oblique.ttf') format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Medium_Oblique.ttf') format("truetype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Bold_Oblique.ttf') format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Futura LT";
-  src: url('images/Futura_LT_Extra_Bold_Oblique.ttf') format("truetype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DINPro";
-  src: url('images/DINPro-Light.otf') ;
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DINPro";
-  src: url('images/DINPro-Regular.otf') ;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DINPro";
-  src: url('images/DINPro-Medium.otf') ;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DINPro";
-  src: url('images/DINPro-Bold.ttf') format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DINPro";
-  src: url('images/DINPro-Black.otf') ;
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-</style> 
-    
-    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="-Ubg7pI9MQjcvCBUUWJrnv71uI2HMRfsOhpkrhs9UHk">
-<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/83782926653/digital_wallets/dialog">
-<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><script async="async" src="js/preloads.js"></script>
-<link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
-<script async="async" src="js/preloads.js" crossorigin="anonymous"></script>
-<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":83782926653,"countryCode":"SG","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/83782926653","merchantName":"Millab","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex"],"total":{"type":"pending","label":"Millab","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
-<script id="shopify-features" type="application/json">{"accessToken":"f03c977a8826a387d488afcc04ef2698","betas":["rich-media-storefront-analytics"],"domain":"millab.com","predictiveSearch":true,"shopId":83782926653,"locale":"en"}</script>
-<script>var Shopify = Shopify || {};
-Shopify.shop = "millab-re.myshopify.com";
-Shopify.locale = "en";
-Shopify.currency = {"active":"USD","rate":"1.0"};
-Shopify.country = "US";
-Shopify.theme = {"name":"[1.0.0]Millab+Main Theme","id":163110617405,"schema_name":"Impact","schema_version":"4.6.0","theme_store_id":null,"role":"main"};
-Shopify.theme.handle = "null";
-Shopify.theme.style = {"id":null,"handle":null};
-Shopify.cdnHost = "millab.com/cdn";
-Shopify.routes = Shopify.routes || {};
-Shopify.routes.root = "/";
-Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
-Shopify.SignInWithShop = Shopify.SignInWithShop || {};
-Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
-Shopify.SignInWithShop.User.recognized = false;</script>
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script>
-  window.ShopifyPay = window.ShopifyPay || {};
-  window.ShopifyPay.apiHost = "shop.app\/pay";
-  window.ShopifyPay.redirectState = null;
-</script>
-<script>
-  window.Shopify = window.Shopify || {};
-  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
-  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
-  window.Shopify.SignInWithShop.eligible = true;
-</script>
-<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
-
-<script type="module">
-  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
-
-  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true,"backendHost":"bWlsbGFiLmNvbQ=="});
-
-</script>
-<script>
-  window.Shopify = window.Shopify || {};
-  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
-  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
-</script>
-<script>(function() {
-  var isLoaded = false;
-  function asyncLoad() {
-    if (isLoaded) return;
-    isLoaded = true;
-    var urls = ["\/\/shopify.privy.com\/widget.js?shop=millab-re.myshopify.com","https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/1ac8bc9521a87fde413bde659\/9922aaf5f2e734a4feec22f72.js?shop=millab-re.myshopify.com"];
-    for (var i = 0; i < urls.length; i++) {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = urls[i];
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-  };
-  if(window.attachEvent) {
-    window.attachEvent('onload', asyncLoad);
-  } else {
-    window.addEventListener('load', asyncLoad, false);
-  }
-})();</script>
-<script id="__st">var __st={"a":83782926653,"offset":-14400,"reqid":"3c5f790a-5664-4c3b-9477-766a71d1724a-1793405573","pageurl":"millab.com\/","u":"e2da5c659639","p":"home"};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
-<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="js/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
-<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//millab.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script crossorigin="anonymous" defer="defer" src="js/storefront-f0e26bdf.js"></script>
-
-<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/millab.com\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://millab.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
-  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
-</script>
-<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="css/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
-<style id="shopify-accelerated-checkout-cart">
-        #shopify-buyer-consent {
-  margin-top: 1em;
-  display: inline-block;
-  width: 100%;
-}
-
-#shopify-buyer-consent.hidden {
-  display: none;
-}
-
-#shopify-subscription-policy-button {
-  background: none;
-  border: none;
-  padding: 0;
-  text-decoration: underline;
-  font-size: inherit;
-  cursor: pointer;
-}
-
-#shopify-subscription-policy-button::before {
-  box-shadow: none;
-}
-
-      </style>
-
-<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
-<link href="css/theme.css" rel="stylesheet" type="text/css" media="all"><!-- BEGIN app block: shopify://apps/instant-ai-page-builder/blocks/instant_core/927e19d9-4e68-41db-99c7-d8debdc1f80d -->
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b -->
-
-<script id="shopify-chat-app-embed-data" type="application/json">
-  {
-    "settings": {
-      "invertActivatorColors": true,
-      "greetingMessage": "Hello and welcome to our store! 🌟\n\nThank you for reaching out. Due to a high volume of inquiries, our team might take up to 24 hours to respond to your message. We appreciate your patience and will get back to you as soon as possible!",
-      "showFeaturedProducts": true,
-      "featuredProducts": [],
-      "horizontalPosition": "bottom_right",
-      "icon": "chat_bubble",
-      "buttonLabel": "Chat"
-    }
-  }
-</script>
-
-<style data-shopify="">
-  
-
-  /* Shadow DOM content does not prevent theme-wide :empty rules from matching the host. */
-  shopify-chat:defined:empty {
-    display: grid;
-  }
-
-  :root {
-    --shopify-chat-bg-color: #FFFFFF;
-    --shopify-chat-text-color: #000000;
-    --shopify-chat-accent-bg-color: #000000;
-    --shopify-chat-accent-text-color: #FFFFFF;
-    --shopify-chat-activator-offset: 20px;
-
-    
-
-    --shopify-chat-activator-font-size: 16px;
-    --shopify-chat-border-radius: 16px;
-  }
-
-  
-</style>
-
-
-
-
-<!-- END app block -->
-
-<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>
-  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
-</script>
-<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 83782926653,storefrontBaseUrl: "https://millab.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://millab.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["7b21cf0b","b13923a8","4c64608a"],webPixelsConfigList: [{"id":"2448720189","configuration":"{\"mailchimp_store_id\":\"store_ly3z7hl4qhs9aeqkcav6\", \"mailchimp_user_id\":\"199620662\",\"mailchimp_list_id\":\"f3add37f31\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"427ad19e526d84637a6599f7a930552e","type":"APP","apiClientId":2585307,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"2026209597","configuration":"{\"siteId\":\"oVOKfoVNTkO0SgWx\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"955de530860b2284a0008eee0c186d16","type":"APP","apiClientId":45694124033,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"1351123261","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-RMGFJK5KNM\\\",\\\"GT-NNSLGSFJ\\\"],\\\"target_country\\\":\\\"US\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"remove_from_cart\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-RMGFJK5KNM\\\",\\\"MC-48K7RSJTZC\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-RMGFJK5KNM\\\",\\\"MC-48K7RSJTZC\\\"]},{\\\"type\\\":\\\"add_shipping_info\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-RMGFJK5KNM\\\",\\\"MC-48K7RSJTZC\\\"]},{\\\"type\\\":\\\"view_item_list\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"},{\\\"type\\\":\\\"view_cart\\\",\\\"action_label\\\":\\\"G-RMGFJK5KNM\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"778862909","configuration":"{\"pixel_id\":\"1568787653269583\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"bd2f978c17a94bbb8a74d43de2165dc5","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"97943869","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Google Ads Enhanced Conversion"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Millab","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"millab-re.myshopify.com","countryCode":"SG","storefrontUrl":"https:\/\/millab.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[{"id":"9966635745597","handle":"m01","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"50428090220861","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"8931127198013","handle":"sculptor-millab-x-timemore","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"47418311967037","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]}],"purchasingCompany":null},},"https://millab.com/cdn","610a19cewf693d529pf324840bm6169d9b4",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"163110617405","themePublished":"true","eventMetadataId":"d0e26ca1-f827-4f16-94bc-d03e0601f180","pageType":"home","shopId":"83782926653","storefrontBaseUrl":"https:\/\/millab.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"7b21cf0b\", \"b13923a8\", \"4c64608a\"]","isMerchantRequest":"false","hashVersion":"610a19cewf693d529pf324840bm6169d9b4","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script async="" src="js/b610a19cewf693d529pf324840bm6169d9b4m.js" data-trekkie-shim="true" data-agent-context="true" data-api-client-id="580111" data-facebook-capi-enabled="true" data-theme-id="163110617405" data-theme-published="true" data-event-metadata-id="d0e26ca1-f827-4f16-94bc-d03e0601f180" data-page-type="home" data-shop-id="83782926653" data-storefront-base-url="https://millab.com" data-extension-base-url="https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager" data-surface="storefront-renderer" data-enabled-beta-flags="[&quot;7b21cf0b&quot;, &quot;b13923a8&quot;, &quot;4c64608a&quot;]" data-is-merchant-request="false" data-hash-version="610a19cewf693d529pf324840bm6169d9b4" data-publish="custom" data-events="[[&quot;page_viewed&quot;,{}]]" data-browser-target="modern"></script><script>
-  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-  window.ShopifyAnalytics.meta.currency = 'USD';
-  var meta = {"page":{"pageType":"home","requestId":"3c5f790a-5664-4c3b-9477-766a71d1724a-1793405573"}};
-  for (var attr in meta) {
-    window.ShopifyAnalytics.meta[attr] = meta[attr];
-  }
-</script>
-<script class="analytics">
-  (function () {
-    var customDocumentWrite = function(content) {
-      var jquery = null;
-
-      if (window.jQuery) {
-        jquery = window.jQuery;
-      } else if (window.Checkout && window.Checkout.$) {
-        jquery = window.Checkout.$;
-      }
-
-      if (jquery) {
-        jquery('body').append(content);
-      }
-    };
-
-    var hasLoggedConversion = function(token) {
-      if (token) {
-        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
-      }
-      return false;
-    }
-
-    var setCookieIfConversion = function(token) {
-      if (token) {
-        var twoMonthsFromNow = new Date(Date.now());
-        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
-
-        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
-      }
-    }
-
-    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
-    if (trekkie.integrations) {
-      return;
-    }
-    trekkie.methods = [
-      'identify',
-      'page',
-      'ready',
-      'track',
-      'trackForm',
-      'trackLink'
-    ];
-    trekkie.factory = function(method) {
-      return function() {
-        var args = Array.prototype.slice.call(arguments);
-        args.unshift(method);
-        trekkie.push(args);
-        if (method == 'track' || method == 'page') {
-          var pageUrl;
-          try {
-            pageUrl = window.location.href;
-          } catch (e) {}
-          var pageReferrer;
-          try {
-            pageReferrer = document.referrer;
-          } catch (e) {}
-          try {
-            if (window.__TREKKIE_SHIM_QUEUE == null) {
-              window.__TREKKIE_SHIM_QUEUE = [];
-            }
-            window.__TREKKIE_SHIM_QUEUE.push({
-              from: 'trekkie-stub',
-              method: method,
-              args: args.slice(1),
-              pageContext: {
-                url: pageUrl,
-                referrer: pageReferrer
-              }
-            });
-          } catch (e) {
-            // no-op
-          }
-        }
-        return trekkie;
-      };
-    };
-    for (var i = 0; i < trekkie.methods.length; i++) {
-      var key = trekkie.methods[i];
-      trekkie[key] = trekkie.factory(key);
-    }
-    trekkie.load = function(config) {
-      trekkie.config = config || {};
-      trekkie.config.initialDocumentCookie = document.cookie;
-      
-    };
-    trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":83782926653,"isMerchantRequest":null,"themeId":163110617405,"themeCityHash":"4098593836440943787","contentLanguage":"en","currency":"USD","eventMetadataId":"d0e26ca1-f827-4f16-94bc-d03e0601f180"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["7b21cf0b","b13923a8","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
-    );
-
-    var loaded = false;
-    trekkie.ready(function() {
-      if (loaded) return;
-      loaded = true;
-
-      window.ShopifyAnalytics.lib = window.trekkie;
-
-      var originalDocumentWrite = document.write;
-      document.write = customDocumentWrite;
-      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-      document.write = originalDocumentWrite;
-
-      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-      var token = match? match[1]: undefined;
-      if (!hasLoggedConversion(token)) {
-        setCookieIfConversion(token);
-        
-      }
-    });
-
-    window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"3c5f790a-5664-4c3b-9477-766a71d1724a-1793405573","shopifyEmitted":true});
-
-    var eventsListenerScript = document.createElement('script');
-    eventsListenerScript.async = true;
-    eventsListenerScript.src = "//millab.com/cdn/shopifycloud/storefront/assets/shop_events_listener-819172a8.js";
-    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-})();</script><script async="" src="js/shop_events_listener-819172a8.js"></script>
-<script defer="" src="js/shopify-perf-kit-3.14.0.min.js" data-application="storefront-renderer" data-shop-id="83782926653" data-render-region="gcp-europe-west1" data-page-type="index" data-theme-instance-id="163110617405" data-theme-name="Impact" data-theme-version="4.6.0" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-shs-beacon-endpoint="https://millab.com/api/collect"></script>
-<script id="shopify-chat-page-data" type="application/json">{"greetingMessage":"Welcome to Millab. How can I help?","customerServiceEmail":"hi@millab.com","onlineStorePasswordProtected":false,"continueAsChip":true,"exportCommand":false,"shopName":"Millab","translations":[{"key":"agent_chat.panel.open_chat","value":"Open chat"},{"key":"agent_chat.panel.ask_anything","value":"Ask anything"},{"key":"agent_chat.panel.title","value":"Storekick"},{"key":"agent_chat.panel.unread_replies","value":"Unread replies"},{"key":"agent_chat.panel.back_to_chat","value":"Back to chat"},{"key":"agent_chat.panel.see_history","value":"See chat history"},{"key":"agent_chat.panel.new_chat","value":"Create a new chat"},{"key":"agent_chat.panel.close","value":"Close chat"},{"key":"agent_chat.panel.undock","value":"Undock chat"},{"key":"agent_chat.panel.dock","value":"Dock chat"},{"key":"agent_chat.panel.expand","value":"Expand chat"},{"key":"agent_chat.panel.contract","value":"Contract chat"},{"key":"agent_chat.panel.jump_to_latest","value":"Jump to latest"},{"key":"agent_chat.panel.loading_chat","value":"Loading chat"},{"key":"agent_chat.input.label","value":"Type your message"},{"key":"agent_chat.input.placeholder","value":"Ask anything..."},{"key":"agent_chat.input.send","value":"Send"},{"key":"agent_chat.input.stop","value":"Stop generating"},{"key":"agent_chat.thinking","value":"Thinking..."},{"key":"agent_chat.first_response_delayed","value":"Agent is taking longer to respond…"},{"key":"agent_chat.searching","value":"Searching..."},{"key":"agent_chat.message.sent_timestamp","value":"Sent · {{time}}"},{"key":"agent_chat.message.automated_label","value":"Automated"},{"key":"agent_chat.message.automated_timestamp","value":"Automated · {{time}}"},{"key":"agent_chat.liveAgentHandoff","value":"Someone from our team will be with you shortly"},{"key":"agent_chat.human_handoff.action","value":"Chat with our team"},{"key":"agent_chat.human_handoff.request","value":"I’d like to talk to someone from your team"},{"key":"agent_chat.human_handoff.ai_assistant","value":"AI assistant"},{"key":"agent_chat.greeting.default","value":"Hi there!"},{"key":"agent_chat.greeting.with_name","value":"Hi {{name}}!"},{"key":"agent_chat.greeting.welcome","value":"You can ask questions about shopping, sizing\/dimensions, shipping, returns, or order status."},{"key":"agent_chat.greeting.welcome_back","value":"Welcome back to %{shop_name}! How can I help?"},{"key":"agent_chat.greeting.welcome_back_no_shop","value":"Welcome back! How can I help?"},{"key":"agent_chat.greeting.welcome_to_shop","value":"Welcome to %{shop_name}. How can I help?"},{"key":"agent_chat.greeting.generic","value":"How can I help?"},{"key":"agent_chat.disclaimer.text","value":"This chat is powered by AI from Shopify and may make mistakes. Your messages are visible to {{shop_name}}. See"},{"key":"agent_chat.disclaimer.text_human","value":"Your messages are visible to {{shop_name}} and to Shopify for the provision and improvement of the services. See"},{"key":"agent_chat.disclaimer.link_text","value":"privacy policy"},{"key":"agent_chat.error.response_unavailable","value":"Response unavailable"},{"key":"agent_chat.error.generic","value":"Something went wrong."},{"key":"agent_chat.error.response_failed","value":"Couldn’t load this message"},{"key":"agent_chat.error.message_send_failed","value":"Your message couldn’t be sent"},{"key":"agent_chat.error.attachment_upload_failed","value":"Your attachment didn’t upload"},{"key":"agent_chat.error.first_response_stalled","value":"Agent couldn’t respond"},{"key":"agent_chat.error.try_again","value":"Try again"},{"key":"agent_chat.error.unavailable","value":"Chat isn't available right now - try again later"},{"key":"agent_chat.error.usage_limit","value":"Message limit reached — try again later or email us at {{email}}"},{"key":"agent_chat.error.usage_limit_no_email","value":"Message limit reached — try again later"},{"key":"agent_chat.error.cost_quota_unhandled","value":"Chat isn’t available right now—email us at {{email}}"},{"key":"agent_chat.error.cost_quota_unhandled_no_email","value":"Chat isn’t available right now"},{"key":"agent_chat.error.cost_quota_handover","value":"AI assistant isn’t available right now — our team will reply shortly"},{"key":"agent_chat.unavailable.title","value":"Chat isn’t available right now"},{"key":"agent_chat.unavailable.description","value":"Something went wrong while loading the chat."},{"key":"agent_chat.history.heading","value":"Chat history"},{"key":"agent_chat.history.loading","value":"Loading conversation history"},{"key":"agent_chat.history.aria_label","value":"Conversation history"},{"key":"agent_chat.history.no_conversations","value":"No conversations"},{"key":"agent_chat.history.conversation.one","value":"conversation"},{"key":"agent_chat.history.conversation.other","value":"conversations"},{"key":"agent_chat.history.error_message","value":"Something went wrong."},{"key":"agent_chat.history.try_again","value":"Try again"},{"key":"agent_chat.history.no_past","value":"No past conversations"},{"key":"agent_chat.history.start_new","value":"Start a new chat"},{"key":"agent_chat.history.untitled","value":"Untitled conversation"},{"key":"agent_chat.history.resume","value":"Resume: {{title}}"},{"key":"agent_chat.history.resume_with_time","value":"Resume: {{title}}, {{time}}"},{"key":"agent_chat.history.delete","value":"Delete conversation: {{title}}"},{"key":"agent_chat.history.delete_failed","value":"Could not delete conversation"},{"key":"agent_chat.feedback.group_label","value":"Message feedback"},{"key":"agent_chat.feedback.thumbs_up","value":"Thumbs up"},{"key":"agent_chat.feedback.thumbs_down","value":"Thumbs down"},{"key":"agent_chat.feedback.add_comment","value":"Add comment"},{"key":"agent_chat.feedback.thanks","value":"Thanks for your feedback"},{"key":"agent_chat.feedback.placeholder_up","value":"Tell us what went well"},{"key":"agent_chat.feedback.placeholder_down","value":"Tell us what could have been better"},{"key":"agent_chat.feedback.comment_label","value":"Feedback comment"},{"key":"agent_chat.feedback.cancel","value":"Cancel"},{"key":"agent_chat.feedback.submit","value":"Submit"},{"key":"agent_chat.feedback.character_count","value":"{{current}}\/{{max}}"},{"key":"agent_chat.feedback.character_limit_reached","value":"Maximum length reached. Feedback is limited to {{max}} characters."},{"key":"agent_chat.buyer_profile.button.open","value":"Buyer Profile"},{"key":"agent_chat.buyer_profile.title","value":"Buyer Profile"},{"key":"agent_chat.buyer_profile.empty","value":"No buyer profile available."},{"key":"agent_chat.buyer_profile.close","value":"Close"},{"key":"agent_chat.suggestions.empty_state_label","value":"Suggested questions"},{"key":"agent_chat.suggestions.quick_reply_label","value":"Suggested replies"},{"key":"agent_chat.auth.sign_in_to_continue","value":"Sign in to continue"},{"key":"agent_chat.auth.sign_in","value":"Sign in"},{"key":"agent_chat.auth.skip_and_chat","value":"Skip and start chatting"},{"key":"agent_chat.auth.pre_chat_title","value":"Sign in to personalize and save your chats"},{"key":"agent_chat.auth.pre_chat_subtitle","value":"Sign in or create an account"},{"key":"agent_chat.auth.staff_chat_required_title","value":"Don't miss a reply"},{"key":"agent_chat.auth.staff_chat_required_subtitle","value":"Sign in to chat with our team. We'll email you if you leave the chat."},{"key":"agent_chat.auth.share_disclaimer","value":"By continuing, Shop will share your name and email with this store. See their {{terms_link}} and {{privacy_link}}"},{"key":"agent_chat.auth.terms_link","value":"terms"},{"key":"agent_chat.auth.privacy_link","value":"privacy policy"},{"key":"agent_chat.auth.declined_pre_chat","value":"I can’t connect you with the store unless you sign in."},{"key":"agent_chat.reply_by_email.continuation_prompt","value":"If you leave the chat, we’ll email you when there’s a reply."},{"key":"agent_chat.reply_by_email.sign_in_prompt","value":"Sign in to get emailed when there’s a reply."},{"key":"agent_chat.order_lookup.track_order","value":"Track my order"},{"key":"agent_chat.order_lookup.track_another_order","value":"Track another order"},{"key":"agent_chat.order_lookup.new_conversation","value":"New conversation"},{"key":"agent_chat.order_lookup.follow_up_label","value":"Order lookup actions"},{"key":"agent_chat.order_lookup.enter_order_information","value":"Enter order information"},{"key":"agent_chat.order_lookup.prompt","value":"To see your order status, please provide your order details."},{"key":"agent_chat.order_lookup.form_title","value":"Track my order"},{"key":"agent_chat.order_lookup.form_subtitle","value":"Please provide your information."},{"key":"agent_chat.order_lookup.order_number_label","value":"Order number"},{"key":"agent_chat.order_lookup.email_label","value":"Email address"},{"key":"agent_chat.order_lookup.submit","value":"Track my order"},{"key":"agent_chat.order_lookup.cancel","value":"Cancel"},{"key":"agent_chat.order_lookup.invalid_order_number","value":"Please enter a valid order number with only numbers and letters, no spaces (e.g. 1006)."},{"key":"agent_chat.order_lookup.invalid_order_number_whitespace","value":"Please enter a valid order number with only numbers and letters, no spaces (e.g. 1006)."},{"key":"agent_chat.order_lookup.invalid_email","value":"Please enter a valid email address"},{"key":"agent_chat.order_lookup.generic_error","value":"There was a problem looking up your order. Please try again."},{"key":"agent_chat.order_lookup.rate_limited_error","value":"Too many attempts. Try again later."},{"key":"agent_chat.order_lookup.locked_composer_status","value":"Order lookup is in progress. Start a new conversation to ask something else."},{"key":"agent_chat.legacy_contact.form_title","value":"Before we get started"},{"key":"agent_chat.legacy_contact.form_subtitle","value":"Please provide your information so we can reply to you if you leave the chat."},{"key":"agent_chat.legacy_contact.first_name_label","value":"First name"},{"key":"agent_chat.legacy_contact.last_name_label","value":"Last name"},{"key":"agent_chat.legacy_contact.email_label","value":"Email"},{"key":"agent_chat.legacy_contact.marketing_opt_in","value":"Email me with news and offers"},{"key":"agent_chat.legacy_contact.submit","value":"Start chat"},{"key":"agent_chat.legacy_contact.cancel","value":"Cancel"},{"key":"agent_chat.legacy_contact.invalid_first_name","value":"Enter a valid first name."},{"key":"agent_chat.legacy_contact.invalid_last_name","value":"Enter a valid last name."},{"key":"agent_chat.legacy_contact.invalid_email","value":"Enter a valid email address."},{"key":"agent_chat.legacy_contact.invalid_email_length","value":"Email address is too long."},{"key":"agent_chat.legacy_contact.generic_error","value":"Something went wrong."},{"key":"agent_chat.legacy_contact.rate_limited_error","value":"Too many attempts. Try again later."},{"key":"agent_chat.discountCard.useDiscount","value":"Use discount"},{"key":"agent_chat.discountCard.discountApplicationContext","value":"Applies automatically at checkout"},{"key":"agent_chat.cart.checkout","value":"Checkout"},{"key":"agent_chat.product.add_to_cart","value":"Add to cart"},{"key":"agent_chat.product.view_details","value":"View details"},{"key":"agent_chat.product.out_of_stock","value":"Out of stock"},{"key":"agent_chat.product.compare_suggestions","value":"Compare suggestions"},{"key":"agent_chat.product.hide_suggestions","value":"Hide suggestions"},{"key":"agent_chat.product.sold_out","value":"Sold out"},{"key":"agent_chat.order.item.one","value":"item"},{"key":"agent_chat.order.item.other","value":"items"},{"key":"agent_chat.order.less_items.one","value":"- hide {{count}} item"},{"key":"agent_chat.order.less_items.other","value":"- hide {{count}} items"},{"key":"agent_chat.order.more_items.one","value":"+ {{count}} more item"},{"key":"agent_chat.order.more_items.other","value":"+ {{count}} more items"},{"key":"agent_chat.order.view_order","value":"View order {{orderId}}"},{"key":"agent_chat.order.track_shipment","value":"Track shipment"},{"key":"agent_chat.order.of_total","value":"{{index}} of {{total}}"},{"key":"agent_chat.order.label","value":"Order {{number}}"},{"key":"agent_chat.order.count.one","value":"{{count}} Order"},{"key":"agent_chat.order.count.other","value":"{{count}} Orders"},{"key":"agent_chat.order.ordered_on","value":"Ordered {{date}}"},{"key":"agent_chat.order.select","value":"Select order {{number}}"},{"key":"agent_chat.return.heading","value":"Select items to return"},{"key":"agent_chat.return.toggle_item","value":"Select {{name}}"},{"key":"agent_chat.return.select_item_non_returnable","value":"{{name}}, not returnable"},{"key":"agent_chat.return.quantity_label","value":"Return quantity"},{"key":"agent_chat.return.reason_label","value":"Reason for return"},{"key":"agent_chat.return.reason_placeholder","value":"Select a reason"},{"key":"agent_chat.return.confirm","value":"Request return"},{"key":"agent_chat.return.confirmed","value":"Return requested"},{"key":"agent_chat.return.reason.size_too_small","value":"Size too small"},{"key":"agent_chat.return.reason.size_too_large","value":"Size too large"},{"key":"agent_chat.return.reason.unwanted","value":"Unwanted"},{"key":"agent_chat.return.reason.not_as_described","value":"Not as described"},{"key":"agent_chat.return.reason.wrong_item","value":"Wrong item"},{"key":"agent_chat.return.reason.defective","value":"Defective"},{"key":"agent_chat.return.reason.style","value":"Style"},{"key":"agent_chat.return.reason.color","value":"Color"},{"key":"agent_chat.return.reason.other_reason","value":"Other"},{"key":"agent_chat.scroll.previous","value":"Previous"},{"key":"agent_chat.scroll.next","value":"Next"}]}</script>
-<script id="shopify-customer-account-data" type="application/json">{"customer":null,"shop":{"id":"83782926653","customerAccountTranslations":[{"key":"account_menu.signed_out_state.sheet_title","value":"Sign in or create account"},{"key":"account_menu.signed_out_state.section_divider","value":"More ways to sign in"},{"key":"account_menu.signed_out_state.alternate_divider","value":"OR"},{"key":"account_menu.signed_out_state.email_field_label","value":"Email"},{"key":"account_menu.signed_out_state.orders_button","value":"Orders"},{"key":"account_menu.signed_out_state.profile_button","value":"Profile"},{"key":"account_menu.signed_out_state.shop_login_button","value":"Sign in with Shop"},{"key":"account_menu.signed_out_state.continue_with_google","value":"Continue with Google"},{"key":"account_menu.signed_out_state.continue_with_facebook","value":"Continue with Facebook"},{"key":"account_menu.signed_out_state.marketing_consent_label","value":"Email me with news and offers"},{"key":"account_menu.signed_in_state.greeting_with_name","value":"Hi, {{first_name}}"},{"key":"account_menu.signed_in_state.greeting_without_name","value":"Account"},{"key":"account_menu.signed_in_state.orders_button","value":"Orders"},{"key":"account_menu.signed_in_state.profile_button","value":"Profile"},{"key":"account_menu.location_picker.sheet_title","value":"Locations"},{"key":"account_menu.location_picker.search_field_placeholder","value":"Search"},{"key":"account_menu.aria_labels.close_menu","value":"Close menu"},{"key":"account_menu.aria_labels.back_to_main_menu","value":"Back to main menu from {{title}}"},{"key":"account_menu.aria_labels.open_submenu","value":"{{title}}, opens submenu"},{"key":"account_menu.aria_labels.loading_menu","value":"Loading menu"},{"key":"account_menu.aria_labels.loading","value":"Loading"},{"key":"account_menu.aria_labels.account","value":"Account"},{"key":"account_menu.aria_labels.sign_in_with_email","value":"Sign in with email"},{"key":"account_menu.aria_labels.sign_in","value":"Sign in"}],"socialLoginProviders":[{"handle":"Shop"}],"legacyCustomerAccounts":true,"signInLinksVisible":true,"b2bEnabled":false,"marketingConsentSigninEnabled":true,"marketingConsentPreselected":false},"visitor":{"country":"US","language":"en"}}</script>
-<meta name="shopify-y" content="01a66a03-1904-4548-a204-e26e14bdad7c" data-expiration="1824963173000"><meta name="shopify-s" content="40b0c3f4-f964-4b72-b400-bd52e97bbd7c" data-expiration="1793407373000"><meta name="request-id" content="3c5f790a-5664-4c3b-9477-766a71d1724a-1793405573">
-<script src="js/pixel.modern.js" async="" data-pixel-id="1351123261" data-pixel-type="APP"></script><script src="js/pixel.modern.js" async="" data-pixel-id="778862909" data-pixel-type="APP"></script><style data-description="gravity-font-faces">
-@font-face {
-  font-family: 'GTStandard-M';
-  src: url('images/GTStandard-MRegular.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 450;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GTStandard-M';
-  src: url('images/GTStandard-MMedium.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GTStandard-M';
-  src: url('images/GTStandard-MSemibold.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}</style><meta http-equiv="origin-trial" content="A1duO9QWZ/3h+eq5jQsvYqOTVq5h5q2AoGInpwNr4FT22/JUt3BxFERXHAo5iKhs6doOavi6G5hno0oBANPzSgIAAABxeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJlcmVuZGVyVW50aWxTY3JpcHQiLCJleHBpcnkiOjE3ODg4MjU2MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="AwnTE1hYg9Bsa5x0wEDsbG6tOdZ3j6ebKzXxbr/2TnTilsCRK9FwndlhAyFVnnBH1qQAqpOPJxVWiKGUqBnOmAYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiTG9uZ0FuaW1hdGlvbkZyYW1lU3R5bGVEdXJhdGlvbiIsImV4cGlyeSI6MTc5MTI0NDgwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A1cNj7yeFpBT/ETqZHRgUfM9tToLwOpBySTd4C9Eya3JtQo/BEQegM6MMV7BZESSyAjQJJXYgH/ovHY1UHmB8woAAABjeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViTUNQIiwiZXhwaXJ5IjoxNzk0ODczNjAwLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1XQljJxk3U4c44gueu4vlIeDofyyWFswfVKbUiNw4itZx4Yy8Uw3nIhtzBePIrv1bSXqzHGDfYymYF5W7TKKAoAAABzeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25NZWFzdXJlbWVudCIsImV4cGlyeSI6MTc5MzY2NDAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Ax9yX6wXQN8G5IFmAMuROwlLDFBpw1CUnFgsIGNYqJJ4H6td1fqjIYkL02d7HpmOAFMFSi3/1kym00LEfYqOdwYAAACOeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25SdWxlc01vZGVyYXRlVmlld3BvcnRIZXVyaXN0aWNzQ29udHJvbCIsImV4cGlyeSI6MTc5NjY4ODAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="speculationrules">{}</script><link rel="stylesheet" href="css/style.css" data-ecomsend-tag="main-style"><link rel="dns-prefetch preconnect" href="https://cdn.shopify.com" crossorigin=""><script type="module" defer="" src="js/consent-tracking-api.js"></script><style>
-            .sr-only {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                white-space: nowrap;
-                border-width: 0;
-            }
-        </style></head>
-
-  <body class="zoom-image--enabled"><div id="ecomsend-widget"><div class="EcomSendAPP"></div></div><!-- DRAWER -->
-<template id="drawer-default-template">
-  <style>
-    [hidden] {
-      display: none !important;
-    }
-  </style>
-
-  <button part="outside-close-button" is="close-button" aria-label="Close"><svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button>
-
-  <div part="overlay"></div>
-
-  <div part="content">
-    <header part="header">
-      <slot name="header"></slot>
-
-      <button part="close-button" is="close-button" aria-label="Close"><svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button>
-    </header>
-
-    <div part="body">
-      <slot></slot>
-    </div>
-
-    <footer part="footer">
-      <slot name="footer"></slot>
-    </footer>
-  </div>
-</template>
-
-<!-- POPOVER -->
-<template id="popover-default-template">
-  <button part="outside-close-button" is="close-button" aria-label="Close"><svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button>
-
-  <div part="overlay"></div>
-
-  <div part="content">
-    <header part="title">
-      <slot name="title"></slot>
-    </header>
-
-    <div part="body">
-      <slot></slot>
-    </div>
-  </div>
-</template><a href="#main" class="skip-to-content sr-only">Saltar para o conteúdo</a><!-- BEGIN sections: header-group -->
-<header id="shopify-section-sections--21619356893501__header" class="shopify-section shopify-section-group-header-group shopify-section--header"><style>
-  :root {
-    --sticky-header-enabled:1;
-  }
-
-  #shopify-section-sections--21619356893501__header {
-    --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
-    --header-padding-block: var(--spacing-4-5);
-    --header-background-opacity: 1.0;
-    --header-background-blur-radius: 0px;
-    --header-transparent-text-color: 255 255 255;--header-logo-width: 100px;
-      --header-logo-height: 24px;position: sticky;
-    top: 0;
-    z-index: 10;
-  }.shopify-section--announcement-bar ~ #shopify-section-sections--21619356893501__header {
-      top: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px));
-    }@media screen and (min-width: 700px) {
-    #shopify-section-sections--21619356893501__header {--header-logo-width: 120px;
-        --header-logo-height: 29px;--header-padding-block: var(--spacing-8-5);
-    }
-  }@media screen and (min-width: 1150px) {#shopify-section-sections--21619356893501__header {
-        --header-grid-template: "logo main-nav secondary-nav" / minmax(0, 1fr) fit-content(70%) minmax(0, 1fr);
-      }
-    }#shopify-section-sections--21619356893501__header .mega-menu {
-      background-color: #dcdcdc;
-    }</style>
-
-<height-observer variable="header">
-  <store-header class="header" sticky="" allow-transparency="">
-    <div class="header__wrapper"><div class="header__main-nav">
-        <div class="header__icon-list">
-          <button type="button" class="tap-area lg:hidden" aria-controls="header-sidebar-menu">
-            <span class="sr-only">Abrir o menu</span><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-hamburger" viewBox="0 0 22 22">
-        <path d="M1 5h20M1 11h20M1 17h20" stroke="currentColor" stroke-linecap="round"></path>
-      </svg></button>
-
-          <a href="/search" class="tap-area sm:hidden" aria-controls="search-drawer">
-            <span class="sr-only">Abrir a pesquisa</span><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
-        <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
-        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg></a><nav class="header__link-list justify-center wrap" role="navigation">
-              <ul class="contents" role="list">
-
-                  <li><details class="relative" is="dropdown-disclosure" trigger="hover">
-                          <summary class="text-with-icon gap-2.5 bold link-faded-reverse" data-url="/collections/frontpage">Moinhos de café<svg role="presentation" focusable="false" width="10" height="7" class="icon icon-chevron-bottom" viewBox="0 0 10 7">
-        <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
-      </svg></summary>
-
-                          <div class="dropdown-menu dropdown-menu--restrictable">
-                            <ul class="contents" role="list"><li><a href="/products/m01" class="dropdown-menu__item group">
-                                      <span><span class="reversed-link">MILLAB M01</span></span>
-                                    </a></li><li><a href="/products/millab-e01" class="dropdown-menu__item group">
-                                      <span><span class="reversed-link">MILLAB E01</span></span>
-                                    </a></li><li><a href="/products/sculptor-millab-x-timemore" class="dropdown-menu__item group">
-                                      <span><span class="reversed-link">Sculptor MILLAB</span></span>
-                                    </a></li></ul>
-                          </div>
-                        </details></li>
-
-                  <li><a href="/collections/drinkware" class="bold link-faded-reverse">Copos e canecas</a></li>
-
-                  <li><a href="/pages/contact" class="bold link-faded-reverse">Contacto</a></li>
-
-                  <li><a href="/pages/about-us" class="bold link-faded-reverse">Sobre nós</a></li></ul>
-            </nav></div>
-      </div><h1 class="header__logo">
-          <a href="/"><span class="sr-only">Millab</span><img src="images/millab_logo.svg" alt="" srcset="//millab.com/cdn/shop/files/millab_logo.svg?v=1706263975&amp;width=120 120w, //millab.com/cdn/shop/files/millab_logo.svg?v=1706263975&amp;width=120 120w" width="120" height="29" sizes="120px" class="header__logo-image"></a>
-        </h1>
-      
-<div class="header__secondary-nav"><div class="header__icon-list"><a href="/search" class="hidden tap-area sm:block" aria-controls="search-drawer">
-            <span class="sr-only">Abrir a pesquisa</span><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
-        <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
-        <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg></a><a href="/account" class="hidden tap-area sm:block">
-              <span class="sr-only">Abrir a conta</span><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-account" viewBox="0 0 22 22">
-        <circle cx="11" cy="7" r="4" fill="none" stroke="currentColor"></circle>
-        <path d="M3.5 19c1.421-2.974 4.247-5 7.5-5s6.079 2.026 7.5 5" fill="none" stroke="currentColor" stroke-linecap="round"></path>
-      </svg></a><a href="/cart" data-no-instant="" class="relative tap-area">
-            <span class="sr-only">Abrir o carrinho</span><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-cart" viewBox="0 0 22 22">
-            <path d="M11 7H3.577A2 2 0 0 0 1.64 9.497l2.051 8A2 2 0 0 0 5.63 19H16.37a2 2 0 0 0 1.937-1.503l2.052-8A2 2 0 0 0 18.422 7H11Zm0 0V1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg><div class="header__cart-count">
-              <cart-count class="count-bubble opacity-0" aria-hidden="true">0</cart-count>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </store-header>
-</height-observer><navigation-drawer mobile-opening="bottom" open-from="left" id="header-sidebar-menu" class="navigation-drawer drawer lg:hidden" role="dialog" aria-modal="true">
-    <button is="close-button" aria-label="Close" class="sm-max:hidden"><svg role="presentation" stroke-width="2" focusable="false" width="19" height="19" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button><div class="panel-list__wrapper">
-  <div class="panel">
-    <div class="panel__wrapper">
-      <div class="panel__scroller v-stack gap-8"><ul class="v-stack gap-4">
-<li class="h3 sm:h4"><button class="text-with-icon w-full group justify-between" aria-expanded="false" data-panel="1-0">
-                  <span>Moinhos de café</span>
-                  <span class="circle-chevron group-hover:colors group-expanded:colors"><svg role="presentation" focusable="false" width="5" height="8" class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
-        <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
-      </svg></span>
-                </button></li>
-<li class="h3 sm:h4"><a href="/collections/drinkware" class="group block w-full">
-                  <span><span class="reversed-link">Copos e canecas</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="/pages/contact" class="group block w-full">
-                  <span><span class="reversed-link">Contacto</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="/pages/about-us" class="group block w-full">
-                  <span><span class="reversed-link">Sobre nós</span></span>
-                </a></li></ul></div><div class="panel-footer v-stack gap-5"><ul class="social-media " role="list"><li>
-      <a href="https://www.facebook.com/people/Millab/100095382993467/" class="tap-area" target="_blank" rel="noopener" aria-label="Follow on Facebook"><svg role="presentation" focusable="false" width="27" height="27" class="icon icon-facebook" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.183 21.85v-8.868H7.2V9.526h2.983V6.982a4.17 4.17 0 0 1 4.44-4.572 22.33 22.33 0 0 1 2.667.144v3.084h-1.83a1.44 1.44 0 0 0-1.713 1.68v2.208h3.423l-.447 3.456h-2.97v8.868h-3.57Z" fill="currentColor"></path>
-      </svg></a>
-    </li><li>
-      <a href="https://www.instagram.com/millab_official/" class="tap-area" target="_blank" rel="noopener" aria-label="Follow on Instagram"><svg role="presentation" focusable="false" width="27" height="27" class="icon icon-instagram" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z" fill="currentColor"></path>
-      </svg></a>
-    </li><li>
-      <a href="https://www.youtube.com/@Millabofficial" class="tap-area" target="_blank" rel="noopener" aria-label="Follow on YouTube"><svg role="presentation" focusable="false" width="27" height="27" class="icon icon-youtube" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.44 5.243c.929.244 1.66.963 1.909 1.876.451 1.654.451 5.106.451 5.106s0 3.452-.451 5.106a2.681 2.681 0 0 1-1.91 1.876c-1.684.443-8.439.443-8.439.443s-6.754 0-8.439-.443a2.682 2.682 0 0 1-1.91-1.876c-.45-1.654-.45-5.106-.45-5.106s0-3.452.45-5.106a2.681 2.681 0 0 1 1.91-1.876c1.685-.443 8.44-.443 8.44-.443s6.754 0 8.438.443Zm-5.004 6.982L9.792 15.36V9.091l5.646 3.134Z" fill="currentColor"></path>
-      </svg></a>
-    </li></ul><div class="panel-footer__localization-wrapper h-stack gap-6 border-t md:hidden"><a href="/account" class="panel-footer__account-link bold text-sm">Conta</a></div></div></div>
-  </div><div class="panel gap-8">
-      <div class="panel__wrapper" hidden="">
-                  <ul class="v-stack gap-4">
-                    <li class="lg:hidden">
-                      <button class="text-with-icon h6 text-subdued" data-panel="0"><svg role="presentation" focusable="false" width="7" height="10" class="icon icon-chevron-left reverse-icon" viewBox="0 0 7 10">
-        <path d="M6 1 2 5l4 4" fill="none" stroke="currentColor" stroke-width="2"></path>
-      </svg>Moinhos de café
-                      </button>
-                    </li><li class="h3 sm:h4"><a class="group block w-full" href="/products/m01"><span><span class="reversed-link">MILLAB M01</span></span>
-                            </a></li><li class="h3 sm:h4"><a class="group block w-full" href="/products/millab-e01"><span><span class="reversed-link">MILLAB E01</span></span>
-                            </a></li><li class="h3 sm:h4"><a class="group block w-full" href="/products/sculptor-millab-x-timemore"><span><span class="reversed-link">Sculptor MILLAB</span></span>
-                            </a></li></ul></div>
-    </div></div></navigation-drawer><script>
-  document.documentElement.style.setProperty('--header-height', Math.round(document.getElementById('shopify-section-sections--21619356893501__header').clientHeight) + 'px');
-</script>
-
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RUSTIC — Móveis rústicos</title>
+<meta name="description" content="RUSTIC — Móveis rústicos de madeira, mármore e metal. Peças em destaque.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <span class="brand">RUSTIC</span>
+  <a href="#colecao">Coleção</a>
 </header>
-<!-- END sections: header-group --><!-- BEGIN sections: overlay-group -->
-
-<!-- END sections: overlay-group --><main role="main" id="main" class="anchor">
-      <section id="shopify-section-template--21619357450557__slideshow_jkKyip" class="shopify-section shopify-section--slideshow"><style>#shopify-section-template--21619357450557__slideshow_jkKyip {
-    --slideshow-background: #f2f2f2;
-    --slideshow-controls-background: ;
-    --slideshow-controls-color: 255 255 255;margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));}#block-image_qgx9na {--slideshow-slide-background: #f2f2f2;
-      --slideshow-slide-controls-background: ;
-      --slideshow-slide-controls-color: 255 255 255;
-    }</style><x-slideshow class="slideshow  " allow-transparent-header="" style="--slideshow-controls-color: 255 255 255;"><slideshow-carousel id="slideshow-template--21619357450557__slideshow_jkKyip" class="slideshow__carousel" reveal-on-scroll="true" selector=".slideshow__slide" transition="fade_with_text" role="region" style="opacity: 1;"><div id="block-image_qgx9na" class="slideshow__slide is-selected" role="group" style="z-index: 1;"><div class="content-over-media content-over-media--auto " style="--content-over-media-content-max-width: 780px; --content-over-media-overlay: 0 0 0 / 0.0"><div class="float-image-content"><img src="images/DSC08427-_2.png" alt="" srcset="//millab.com/cdn/shop/files/DSC08427-_2.png?v=1747388049&amp;width=352 352w, //millab.com/cdn/shop/files/DSC08427-_2.png?v=1747388049&amp;width=832 832w, //millab.com/cdn/shop/files/DSC08427-_2.png?v=1747388049&amp;width=1200 1200w, //millab.com/cdn/shop/files/DSC08427-_2.png?v=1747388049&amp;width=1920 1920w, //millab.com/cdn/shop/files/DSC08427-_2.png?v=1747388049&amp;width=2000 2000w" width="2000" height="3152" loading="eager" fetchpriority="high" sizes="100vw" class="float-image" style="opacity: 1; transform: scale(1);"></div><img src="images/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png" alt="" srcset="//millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=200 200w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=300 300w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=400 400w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=500 500w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=600 600w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=700 700w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=800 800w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=900 900w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=1000 1000w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=1200 1200w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=1400 1400w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=1600 1600w, //millab.com/cdn/shop/files/Frame_37_f27b6df1-9d43-4894-81c5-3cc28495123b.png?v=1724319078&amp;width=1800 1800w" width="1920" height="1920" loading="eager" fetchpriority="high" sizes="100vw" class="hidden sm:block" style="opacity: 1; transform: scale(1);"><img src="images/hero2_2.png" alt="" srcset="//millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=200 200w, //millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=300 300w, //millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=400 400w, //millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=500 500w, //millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=600 600w, //millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=700 700w, //millab.com/cdn/shop/files/hero2_2.png?v=1747389747&amp;width=800 800w" width="800" height="2189" loading="eager" fetchpriority="high" sizes="100vw" class="sm:hidden" style="opacity: 1; transform: scale(1);"><div class="place-self-start-center text-center sm:place-self-center-start sm:text-start  text-custom" style="--text-color: 255 255 255;">
-            <div class="prose"><p class="subheading" data-sequence="subheading" style="opacity: 1;">Millab M01</p><p class="h1" data-sequence="heading" style="opacity: 1;"><split-lines>Simplesmente revolucionário</split-lines></p><p class="description" data-sequence="description">Há mais de 12 anos que aperfeiçoamos cada detalhe dos nossos moinhos — e agora o M01 redefine o que um moinho manual pode ser e parecer.</p>
-<a class="button button--xl" style="--button-background: 255 255 255 / var(--button-background-opacity, 1); --button-outline-color: 255 255 255; --button-text-color: 0 0 0; opacity: 1;" href="/products/m01">Descobrir mais</a></div>
-          </div>
-        </div></div></slideshow-carousel>
-</x-slideshow>
-<script>
-  document.querySelectorAll("#slideshow-template--21619357450557__slideshow_jkKyip .float-image-content").forEach(item => {
-    item.addEventListener("mouseenter", () =>{
-      item.focus()
-      item.style.overflowY = "scroll"
-    })
-    item.addEventListener("scroll", (event) => {
-      const $target = event.target;
-      if($target.scrollHeight - $target.scrollTop - 1000 == 0 || $target.scrollTop == 0){
-        item.style.overflowY = "hidden"
-      }
-    })
-  })
-</script>
-
-</section><section id="shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd" class="shopify-section shopify-section--collection-list"><style>
-  #shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd {
-    --section-background-hash: 0;
-  }
-
-  #shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd + * {
-    --previous-section-background-hash: 0;
-  }</style><style>
-  #shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd .collection-list {
-    --collection-list-grid: none;
-  }
-
-  @media screen and (min-width: 700px) {
-    #shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd .collection-list {
-      --collection-list-grid: auto / repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    #shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd .collection-list {
-      --collection-list-grid: auto / repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    #shopify-section-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd .collection-list {
-      --collection-list-grid: auto / repeat(2, minmax(0, 1fr));
-    }
-  }
-</style><div class="section   section-blends section-full" style="">
-  <div class="section-stack">
-  <section-header class="section-header "><div class="prose"><h3>Comprar moinhos de café</h3></div></section-header><div class="floating-controls-container"><scroll-carousel selector=".collection-card" id="scroll-area-template--21619357450557__4679e25e-4701-4905-b6ac-6e2cfa4bc5bd" class="scroll-area bleed ">
-        <collection-list class="collection-list"><a href="/products/m01" class="collection-card collection-card--reverse-transition shadow" reveal-js="">
-              <div class="content-over-media group rounded-sm" style="--content-over-media-overlay: 0 0 0 / 0.1"><img src="images/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png" alt="" srcset="//millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=200 200w, //millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=300 300w, //millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=400 400w, //millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=500 500w, //millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=600 600w, //millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=800 800w, //millab.com/cdn/shop/files/M01_3c62cecb-bde0-4b5f-a0bc-6d6929d2addd.png?v=1760689150&amp;width=1000 1000w" width="1000" height="1000" loading="eager" sizes="(max-width: 699px) 73vw, 800px" class="zoom-image"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">MILLAB M01</p><p class="description">O moinho manual definitivo.</p></div></div></div>
-            </a><a href="/products/sculptor-millab-x-timemore" class="collection-card collection-card--reverse-transition shadow" reveal-js="">
-              <div class="content-over-media group rounded-sm" style="--content-over-media-overlay: 0 0 0 / 0.1"><img src="images/SSP5.jpg" alt="TIMEMORE Electric Coffee Grinder Sculptor 078SSP-1" srcset="//millab.com/cdn/shop/files/SSP5.jpg?v=1750409415&amp;width=200 200w, //millab.com/cdn/shop/files/SSP5.jpg?v=1750409415&amp;width=300 300w, //millab.com/cdn/shop/files/SSP5.jpg?v=1750409415&amp;width=400 400w, //millab.com/cdn/shop/files/SSP5.jpg?v=1750409415&amp;width=500 500w, //millab.com/cdn/shop/files/SSP5.jpg?v=1750409415&amp;width=600 600w, //millab.com/cdn/shop/files/SSP5.jpg?v=1750409415&amp;width=800 800w" width="800" height="800" loading="eager" sizes="(max-width: 699px) 73vw, 800px" class="zoom-image"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">MILLAB X TIMEMORE</p><p class="description">Moagem com mós planas como nunca antes.</p></div></div></div>
-            </a></collection-list>
-      </scroll-carousel></div>
+<section class="hero">
+  <video autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+  <h1>RUSTIC</h1>
+</section>
+<main id="colecao">
+  <p class="section-title">Coleção</p>
+  <p class="section-sub">43 peças</p>
+  <div class="grid">
+      <article class="card">
+        <div class="photo"><img src="images/r01.jpg" alt="Mesa de apoio mármore" loading="lazy"></div>
+        <h2>Mesa de apoio mármore</h2>
+        <p class="price">24.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r02.jpg" alt="Banco escultural laranja" loading="lazy"></div>
+        <h2>Banco escultural laranja</h2>
+        <p class="price">48.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r03.jpg" alt="Mesa de apoio madeira curvada" loading="lazy"></div>
+        <h2>Mesa de apoio madeira curvada</h2>
+        <p class="price">28.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r04.jpg" alt="Mesa de apoio preta canelada" loading="lazy"></div>
+        <h2>Mesa de apoio preta canelada</h2>
+        <p class="price">26.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r05.jpg" alt="Mesa de centro pedra" loading="lazy"></div>
+        <h2>Mesa de centro pedra</h2>
+        <p class="price">52.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r06.jpg" alt="Candeeiro de pé argolas" loading="lazy"></div>
+        <h2>Candeeiro de pé argolas</h2>
+        <p class="price">38.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r07.jpg" alt="Mesa de centro onda" loading="lazy"></div>
+        <h2>Mesa de centro onda</h2>
+        <p class="price">58.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r08.jpg" alt="Poltrona madeira e bouclé" loading="lazy"></div>
+        <h2>Poltrona madeira e bouclé</h2>
+        <p class="price">72.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r09.jpg" alt="Cabide de parede triangular" loading="lazy"></div>
+        <h2>Cabide de parede triangular</h2>
+        <p class="price">22.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r10.jpg" alt="Mesa de apoio Z" loading="lazy"></div>
+        <h2>Mesa de apoio Z</h2>
+        <p class="price">27.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r11.jpg" alt="Mesa de sofá preta ripada" loading="lazy"></div>
+        <h2>Mesa de sofá preta ripada</h2>
+        <p class="price">24.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r12.jpg" alt="Mesa de apoio curva" loading="lazy"></div>
+        <h2>Mesa de apoio curva</h2>
+        <p class="price">29.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r13.jpg" alt="Par de mesas curvas bronze" loading="lazy"></div>
+        <h2>Par de mesas curvas bronze</h2>
+        <p class="price">46.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r14.jpg" alt="Mesa de sofá preta" loading="lazy"></div>
+        <h2>Mesa de sofá preta</h2>
+        <p class="price">23.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r15.jpg" alt="Mesa de apoio betão" loading="lazy"></div>
+        <h2>Mesa de apoio betão</h2>
+        <p class="price">27.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r16.jpg" alt="Mesa de apoio latão" loading="lazy"></div>
+        <h2>Mesa de apoio latão</h2>
+        <p class="price">34.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r17.jpg" alt="Mesa de apoio torcida" loading="lazy"></div>
+        <h2>Mesa de apoio torcida</h2>
+        <p class="price">36.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r18.jpg" alt="Mesa de apoio dourada" loading="lazy"></div>
+        <h2>Mesa de apoio dourada</h2>
+        <p class="price">33.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r19.jpg" alt="Cadeira escultural branca" loading="lazy"></div>
+        <h2>Cadeira escultural branca</h2>
+        <p class="price">54.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r20.jpg" alt="Mesa de centro ripada" loading="lazy"></div>
+        <h2>Mesa de centro ripada</h2>
+        <p class="price">48.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r21.jpg" alt="Mesa de apoio vazada" loading="lazy"></div>
+        <h2>Mesa de apoio vazada</h2>
+        <p class="price">25.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r22.jpg" alt="Relógio de parede pedra" loading="lazy"></div>
+        <h2>Relógio de parede pedra</h2>
+        <p class="price">24.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r23.jpg" alt="Par de poltronas bouclé" loading="lazy"></div>
+        <h2>Par de poltronas bouclé</h2>
+        <p class="price">128.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r24.jpg" alt="Mesa de apoio creme" loading="lazy"></div>
+        <h2>Mesa de apoio creme</h2>
+        <p class="price">29.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r25.jpg" alt="Par de mesas quadradas" loading="lazy"></div>
+        <h2>Par de mesas quadradas</h2>
+        <p class="price">42.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r26.jpg" alt="Mesa de apoio mármore e bronze" loading="lazy"></div>
+        <h2>Mesa de apoio mármore e bronze</h2>
+        <p class="price">35.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r27.jpg" alt="Mesa de apoio champanhe" loading="lazy"></div>
+        <h2>Mesa de apoio champanhe</h2>
+        <p class="price">32.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r28.jpg" alt="Mesa de apoio verde" loading="lazy"></div>
+        <h2>Mesa de apoio verde</h2>
+        <p class="price">31.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r29.jpg" alt="Mesa de apoio branca" loading="lazy"></div>
+        <h2>Mesa de apoio branca</h2>
+        <p class="price">26.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r30.jpg" alt="Mesa de centro vidro" loading="lazy"></div>
+        <h2>Mesa de centro vidro</h2>
+        <p class="price">56.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r31.jpg" alt="Mesa de apoio mármore preto" loading="lazy"></div>
+        <h2>Mesa de apoio mármore preto</h2>
+        <p class="price">33.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r32.jpg" alt="Mesa de apoio semicircular" loading="lazy"></div>
+        <h2>Mesa de apoio semicircular</h2>
+        <p class="price">28.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r33.jpg" alt="Mesa de apoio bronze" loading="lazy"></div>
+        <h2>Mesa de apoio bronze</h2>
+        <p class="price">31.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r34.jpg" alt="Mesa de apoio castanha" loading="lazy"></div>
+        <h2>Mesa de apoio castanha</h2>
+        <p class="price">25.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r35.jpg" alt="Mesa de apoio seixos" loading="lazy"></div>
+        <h2>Mesa de apoio seixos</h2>
+        <p class="price">34.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r36.jpg" alt="Mesa de apoio carvalho" loading="lazy"></div>
+        <h2>Mesa de apoio carvalho</h2>
+        <p class="price">27.500 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r37.jpg" alt="Conjunto de mesas geométricas" loading="lazy"></div>
+        <h2>Conjunto de mesas geométricas</h2>
+        <p class="price">68.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r38.jpg" alt="Candeeiro escultural cinzento" loading="lazy"></div>
+        <h2>Candeeiro escultural cinzento</h2>
+        <p class="price">29.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r39.jpg" alt="Mesas de centro madeira escura" loading="lazy"></div>
+        <h2>Mesas de centro madeira escura</h2>
+        <p class="price">44.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r40.jpg" alt="Materiais" loading="lazy"></div>
+        <h2>Materiais</h2>
+        <p class="note">Madeiras, mármores, metais e tecidos da coleção</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r41.jpg" alt="Conjunto de mesas curvas" loading="lazy"></div>
+        <h2>Conjunto de mesas curvas</h2>
+        <p class="price">64.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r42.jpg" alt="Par de mesas curvas bege" loading="lazy"></div>
+        <h2>Par de mesas curvas bege</h2>
+        <p class="price">44.000 MT</p>
+      </article>
+      <article class="card">
+        <div class="photo"><img src="images/r43.jpg" alt="Bancos de bar" loading="lazy"></div>
+        <h2>Bancos de bar</h2>
+        <p class="price">96.000 MT</p>
+      </article>
   </div>
-</div>
-
-
-</section><section id="shopify-section-template--21619357450557__multi_column_9L4Uhq" class="shopify-section shopify-section--multi-column"><style>
-  #shopify-section-template--21619357450557__multi_column_9L4Uhq {
-    --section-background-hash: 0;
-  }
-
-  #shopify-section-template--21619357450557__multi_column_9L4Uhq + * {
-    --previous-section-background-hash: 0;
-  }</style><style>
-    #shopify-section-template--21619357450557__multi_column_9L4Uhq {
-      --multi-column-grid: auto / auto-flow 73vw;
-      --multi-column-list-gap: var(--spacing-12);
-    }
-  </style>
-
-  <div class="section   section-blends section-full" style="">
-    <div class="section-stack">
-  <section-header class="section-header justify-start justify-items-start text-start"><div class="prose"><p class="subheading">Sobre</p><h2 class="h2" reveal-on-scroll="true"><split-lines>Conhece o E01</split-lines></h2><p>O design compacto e integrado da Millab dispensa desmontagens repetidas — basta pôr os grãos e começar a moer.<br><br>Sem fricção. Sem complicações. </p></div></section-header><div class="multi-column scroll-area bleed md:unbleed"><div class="multi-column__item justify-start snap-start" style="--multi-column-item-column-count: span 4"><video-media autoplay="" style="--aspect-ratio: 0.804">
-                    <video playsinline="true" muted="muted" loop="loop" preload="metadata" class="rounded" poster="//millab.com/cdn/shop/files/preview_images/4df1bf9d7f9d45a584878777e1d380c1.thumbnail.0000000000_small.jpg?v=1712116410"><source src="videos/4df1bf9d7f9d45a584878777e1d380c1.HD-720p-3.0Mbps-26681326.mp4" type="video/mp4"><img src="images/4df1bf9d7f9d45a584878777e1d380c1.thumbnail.0000000000_small.jpg"></video>
-                  </video-media><div class="v-stack gap-4 text-start"><p class="h4">Preparação sem esforço</p><div class="prose"><p>Basta pôr os grãos, carregar no botão, e está pronto.</p></div></div></div><div class="multi-column__item justify-start snap-start" style="--multi-column-item-column-count: span 4"><video-media autoplay="" style="--aspect-ratio: 0.804">
-                    <video playsinline="true" muted="muted" loop="loop" preload="metadata" class="rounded" poster="//millab.com/cdn/shop/files/preview_images/56bd9dd5ba214cc99725d9d7ff315712.thumbnail.0000000000_small.jpg?v=1712116648"><source src="videos/56bd9dd5ba214cc99725d9d7ff315712.HD-720p-4.5Mbps-26681394.mp4" type="video/mp4"><img src="images/56bd9dd5ba214cc99725d9d7ff315712.thumbnail.0000000000_small.jpg"></video>
-                  </video-media><div class="v-stack gap-4 text-start"><p class="h4">Moagem de precisão</p><div class="prose"><p>A técnica de moagem “Spike to Cut” melhora a distribuição das partículas e o desempenho sensorial. </p></div></div></div><div class="multi-column__item justify-start snap-start" style="--multi-column-item-column-count: span 4"><video-media autoplay="" style="--aspect-ratio: 0.804">
-                    <video playsinline="true" muted="muted" loop="loop" preload="metadata" class="rounded" poster="//millab.com/cdn/shop/files/preview_images/4c97d0a7d07945b69e97b03bd8baf57a.thumbnail.0000000000_small.jpg?v=1712116798"><source src="videos/4c97d0a7d07945b69e97b03bd8baf57a.HD-720p-4.5Mbps-26681448.mp4" type="video/mp4"><img src="images/4c97d0a7d07945b69e97b03bd8baf57a.thumbnail.0000000000_small.jpg"></video>
-                  </video-media><div class="v-stack gap-4 text-start"><p class="h4">Fusão de sabor</p><div class="prose"><p>Uma chávena de café filtrado “doce e limpo”, com uma camada rica de sabor e doçura acentuada.</p></div></div></div></div>
-    </div>
-  </div></section><section id="shopify-section-template--21619357450557__56013a1f-01f3-4146-9830-0653b4725760" class="shopify-section shopify-section--image-with-text-overlay"><style>
-  #shopify-section-template--21619357450557__56013a1f-01f3-4146-9830-0653b4725760 {--section-outer-spacing-block: 0;--content-over-media-overlay: 0 0 0 / 0.0;}
-</style>
-
-<div class="section   section-blends section-full text-custom" style="--text-color: 255 255 255; "><image-banner reveal-on-scroll="true" parallax="0.3" class="content-over-media content-over-media--lg full-bleed  text-custom" style="--text-color: 255 255 255;"><img src="images/2.jpg" alt="" srcset="//millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=200 200w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=300 300w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=400 400w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=500 500w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=600 600w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=700 700w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=800 800w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=900 900w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=1000 1000w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=1200 1200w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=1400 1400w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=1600 1600w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=1800 1800w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=2000 2000w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=2200 2200w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=2400 2400w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=2600 2600w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=2800 2800w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=3000 3000w, //millab.com/cdn/shop/files/2.jpg?v=1712564907&amp;width=3200 3200w" width="3200" height="1600" loading="lazy" sizes="100vw" class=""><div class="place-self-center text-center sm:place-self-center sm:text-center text-align-center">
-        <div class="prose"><p class="h2" reveal-on-scroll="true"><split-lines>Prazeres do paladar em qualquer lugar, a qualquer hora</split-lines></p><div><p>Feita na perfeição, a Millab oferece uma conveniência sem igual sem comprometer a qualidade. Sente a liberdade de elevar o teu ritual de café em qualquer lugar, a qualquer hora, com a Millab.  </p></div>
-<a class="button button--lg" href="/blogs/news">Descobrir mais</a>
-</div>
-      </div></image-banner>
-</div>
-
-</section><section id="shopify-section-template--21619357450557__press_TRmW7E" class="shopify-section shopify-section--press"><style>
-  #shopify-section-template--21619357450557__press_TRmW7E {
-    --section-background-hash: 054922020920008346060000003430673;
-  }
-
-  #shopify-section-template--21619357450557__press_TRmW7E + * {
-    --previous-section-background-hash: 054922020920008346060000003430673;
-  }@media screen and (min-width: 700px) {
-      #shopify-section-template--21619357450557__press_TRmW7E {
-        --section-background-hash: 0;
-      }
-
-      #shopify-section-template--21619357450557__press_TRmW7E + * {
-        --previous-section-background-hash: 0;
-      }
-    }</style><style>
-    #shopify-section-template--21619357450557__press_TRmW7E {
-      --press-items-border:  / ;
-      --press-max-width: 1000px;
-    }
-  </style><div class="section   section-boxed bg-custom" style="--background: 255 255 255; ">
-    <div class="section-stack">
-      <div class="press">
-        <press-carousel id="carousel-template--21619357450557__press_TRmW7E" class="press__list full-bleed text-center sm:unbleed" role="region"><div id="block-template--21619357450557__press_TRmW7E-quote_GkV6Yh" class="press__list-item snap-center is-selected" role="group" aria-label="Item 1 of 3"><div class="rating">
-                  <div class="rating__stars" role="img" aria-label="5 out of 5 stars"><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg></div>
-                </div><blockquote class="blockquote h3" reveal-on-scroll="true">Acredita em mim: um moinho de café Millab é essencial para sabores mais frescos e aromáticos e uma experiência de preparação personalizável.</blockquote><div class="v-stack gap-2"><div class="press__logo rounded"><img src="images/icon_5f285f18-7dc1-42ba-8ee9-74f4097f114c.png" alt="" srcset="//millab.com/cdn/shop/files/icon_5f285f18-7dc1-42ba-8ee9-74f4097f114c.png?v=1709798582&amp;width=80 80w, //millab.com/cdn/shop/files/icon_5f285f18-7dc1-42ba-8ee9-74f4097f114c.png?v=1709798582&amp;width=100 100w" width="100" height="100" loading="lazy" style="--press-image-max-width: 80px" class="press__image" sizes="80px"></div><p class="press__author text-subdued">Jenny - CoffeeLover  @jenny1234</p></div></div><div id="block-template--21619357450557__press_TRmW7E-quote_zey9x4" class="press__list-item snap-center " role="group" aria-label="Item 2 of 3"><div class="rating">
-                  <div class="rating__stars" role="img" aria-label="4 out of 5 stars"><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star rating__star--empty icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg></div>
-                </div><blockquote class="blockquote h3" reveal-on-scroll="true">Eleva a tua experiência de café com o moinho Millab.</blockquote><div class="v-stack gap-2"><div class="press__logo rounded"><img src="images/icon_2_da0cc76b-dcc0-47d9-bc35-caec185eacbc.png" alt="" srcset="//millab.com/cdn/shop/files/icon_2_da0cc76b-dcc0-47d9-bc35-caec185eacbc.png?v=1709799779&amp;width=80 80w, //millab.com/cdn/shop/files/icon_2_da0cc76b-dcc0-47d9-bc35-caec185eacbc.png?v=1709799779&amp;width=100 100w" width="100" height="100" loading="eager" style="--press-image-max-width: 80px" class="press__image" sizes="80px"></div><p class="press__author text-subdued">Sophie - CoffeeLover (@sophie1234)</p></div></div><div id="block-template--21619357450557__press_TRmW7E-quote_L6JyLF" class="press__list-item snap-center " role="group" aria-label="Item 3 of 3"><div class="rating">
-                  <div class="rating__stars" role="img" aria-label="5 out of 5 stars"><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg><svg role="presentation" fill="none" focusable="false" width="15" height="15" class="rating__star icon icon-rating-star" viewBox="0 0 15 15">
-        <path d="M7.5 0L9.58587 5.2731L15 5.72949L10.875 9.44483L12.1353 15L7.5 12.0231L2.86475 15L4.125 9.44483L0 5.72949L5.41414 5.2731L7.5 0Z" fill="currentColor"></path>
-      </svg></div>
-                </div><blockquote class="blockquote h3" reveal-on-scroll="true">Qualidade de construção extrema, sólida como uma rocha. É inacreditável quanto aço de qualidade ela pesa.</blockquote><div class="v-stack gap-2"><div class="press__logo rounded"><img src="images/c1.jpg" alt="" srcset="//millab.com/cdn/shop/files/c1.jpg?v=1714103415&amp;width=100 100w, //millab.com/cdn/shop/files/c1.jpg?v=1714103415&amp;width=200 200w" width="720" height="540" loading="eager" style="--press-image-max-width: 100px" class="press__image" sizes="100px"></div><p class="press__author text-subdued">Juliano Caldeira</p></div></div></press-carousel><div class="press__controls">
-            <button class="circle-button ring group" is="prev-button" aria-controls="carousel-template--21619357450557__press_TRmW7E">
-              <span class="sr-only">Anterior</span>
-              <span class="animated-arrow animated-arrow--reverse"></span>
-            </button>
-
-            <page-dots aria-controls="carousel-template--21619357450557__press_TRmW7E" class="page-dots"><button type="button" class="tap-area" aria-current="true">
-                  <span class="sr-only">Ir para o item 1</span>
-                </button><button type="button" class="tap-area" aria-current="false">
-                  <span class="sr-only">Ir para o item 2</span>
-                </button><button type="button" class="tap-area" aria-current="false">
-                  <span class="sr-only">Ir para o item 3</span>
-                </button></page-dots>
-
-            <button class="circle-button ring group" is="next-button" aria-controls="carousel-template--21619357450557__press_TRmW7E">
-              <span class="sr-only">Seguinte</span>
-              <span class="animated-arrow"></span>
-            </button>
-          </div></div>
-    </div>
-  </div><style> #shopify-section-template--21619357450557__press_TRmW7E blockquote {display: block; font-size: 1.5rem; line-height: 1.4; font-weight: bold; opacity: 1; transform: translateY(0px);} #shopify-section-template--21619357450557__press_TRmW7E ah4.blockquote {display: inline; font-size: inherit; font-weight: inherit;} </style></section><section id="shopify-section-template--21619357450557__rich_text_7fCkL9" class="shopify-section shopify-section--rich-text"><style>
-  #shopify-section-template--21619357450557__rich_text_7fCkL9 {
-    --section-background-hash: 0;
-  }
-
-  #shopify-section-template--21619357450557__rich_text_7fCkL9 + * {
-    --previous-section-background-hash: 0;
-  }</style><style>
-    #shopify-section-template--21619357450557__rich_text_7fCkL9 {
-      --rich-text-max-width: 650px
-    }
-  </style>
-
-  <div class="section   section-blends section-full" style=""><div class="rich-text justify-center ">
-      <div class="rich-text__wrapper">
-        <div class="prose justify-items-center text-center"><p class="bold">MILLAB &amp; TIMEMORE</p><p class="h2 hyphenate">Sobre a nossa equipa</p><div><p>Mais do que uma marca nova, é uma exploração de mais possibilidades no mundo da moagem.</p></div>
-<a class="button button--xl" href="/pages/contact">Saber mais</a>
-</div>
-      </div>
-    </div>
-  </div></section>
-<!-- BEGIN sections: footer-group -->
-<footer id="shopify-section-sections--21619356860733__footer" class="shopify-section shopify-section-group-footer-group shopify-section--footer"><style>
-  @media screen and (min-width: 1000px) {
-    #shopify-section-sections--21619356860733__footer {--footer-block-list-gap: var(--spacing-10);--footer-block-list-justify-content: space-between;
-    }
-  }
-</style><div class="footer">
-  <div class="container">
-    <div class="footer__wrapper"><div class="footer__block-list empty:hidden"><div class="footer__block footer__block--text"><p class="bold">Sobre a MILLAB</p><div class="prose text-subdued"><p>A MILLAB é uma equipa dinâmica, com forte apoio tecnológico da TIMEMORE. Somos especialistas em criar moinhos de café de alta qualidade para diversas utilizações, tanto em casa como para uso comercial.</p></div><div class="follow-on-shop">
-<script type="module">
-  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.shop-follow-button.en.esm.js");
-
-  
-</script>
-
-<shop-follow-button ux-mode="windoid" return-uri="https://millab.com/account/redirect" proxy="true" data-instance-id="80dea97f-3479-4a8a-9546-2873d6abb790"></shop-follow-button>
-</div></div><div class="footer__block footer__block--menu"><p class="bold">Apoio</p><ul class="v-stack gap-3" role="list"><li>
-                          <a href="/pages/faqs" class="inline-block link-faded break-all">Perguntas frequentes</a>
-                        </li><li>
-                          <a href="/pages/warranty" class="inline-block link-faded break-all">Garantia</a>
-                        </li><li>
-                          <a href="/pages/user-meanul" class="inline-block link-faded break-all">Manual do utilizador</a>
-                        </li><li>
-                          <a href="/blogs/newly-launched/meet-timemore-x-millab-m01-a-manual-coffee-grinder-designed-for-the-modern-ritual" class="inline-block link-faded break-all">Blog</a>
-                        </li></ul>
-                  </div><div class="footer__block footer__block--menu"><p class="bold">ㅤ</p><ul class="v-stack gap-3" role="list"><li>
-                          <a href="https://millab.com/pages/contact" class="inline-block link-faded break-all">Contacta-nos</a>
-                        </li><li>
-                          <a href="/policies/refund-policy" class="inline-block link-faded break-all">Refund &amp; Shipping Policy</a>
-                        </li><li>
-                          <a href="/policies/privacy-policy" class="inline-block link-faded break-all">Política de privacidade</a>
-                        </li><li>
-                          <a href="/policies/terms-of-service" class="inline-block link-faded break-all">Termos de serviço</a>
-                        </li></ul>
-                  </div><div class="footer__block footer__block--menu"><p class="bold">Empresa</p><ul class="v-stack gap-3" role="list"><li>
-                          <a href="https://millab.com/pages/about-us" class="inline-block link-faded break-all">Sobre nós</a>
-                        </li><li>
-                          <a href="/pages/contact" class="inline-block link-faded break-all">Parceiro grossista</a>
-                        </li></ul>
-                  </div><div class="footer__block footer__block--newsletter"><div class="v-stack gap-6"><p class="h5">Sê o primeiro a saber!</p><form method="post" action="/contact#footer-newsletter" id="footer-newsletter" accept-charset="UTF-8" class="footer__newsletter-form form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter"><div class="form-control"><input id="input-sections--21619356860733__footer--contactemail" class="input is-floating" type="email" dir="ltr" name="contact[email]" placeholder=" " autocomplete="email" enterkeyhint="send" required=""><label for="input-sections--21619356860733__footer--contactemail" class="floating-label">E-mail</label><div class="self-submit-button">
-        <button type="submit" class="circle-chevron hover:colors">
-          <span class="sr-only">Subscrever</span><svg role="presentation" focusable="false" width="5" height="8" class="icon icon-chevron-right-small reverse-icon" viewBox="0 0 5 8">
-        <path d="m.75 7 3-3-3-3" fill="none" stroke="currentColor" stroke-width="1.5"></path>
-      </svg></button>
-      </div></div></form></div>
-                </div></div><div class="footer__aside empty:hidden"><div class="footer__aside-top"><ul class="social-media " role="list"><li>
-      <a href="https://www.facebook.com/people/Millab/100095382993467/" class="tap-area" target="_blank" rel="noopener" aria-label="Follow on Facebook"><svg role="presentation" focusable="false" width="27" height="27" class="icon icon-facebook" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.183 21.85v-8.868H7.2V9.526h2.983V6.982a4.17 4.17 0 0 1 4.44-4.572 22.33 22.33 0 0 1 2.667.144v3.084h-1.83a1.44 1.44 0 0 0-1.713 1.68v2.208h3.423l-.447 3.456h-2.97v8.868h-3.57Z" fill="currentColor"></path>
-      </svg></a>
-    </li><li>
-      <a href="https://www.instagram.com/millab_official/" class="tap-area" target="_blank" rel="noopener" aria-label="Follow on Instagram"><svg role="presentation" focusable="false" width="27" height="27" class="icon icon-instagram" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z" fill="currentColor"></path>
-      </svg></a>
-    </li><li>
-      <a href="https://www.youtube.com/@Millabofficial" class="tap-area" target="_blank" rel="noopener" aria-label="Follow on YouTube"><svg role="presentation" focusable="false" width="27" height="27" class="icon icon-youtube" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.44 5.243c.929.244 1.66.963 1.909 1.876.451 1.654.451 5.106.451 5.106s0 3.452-.451 5.106a2.681 2.681 0 0 1-1.91 1.876c-1.684.443-8.439.443-8.439.443s-6.754 0-8.439-.443a2.682 2.682 0 0 1-1.91-1.876c-.45-1.654-.45-5.106-.45-5.106s0-3.452.45-5.106a2.681 2.681 0 0 1 1.91-1.876c1.685-.443 8.44-.443 8.44-.443s6.754 0 8.438.443Zm-5.004 6.982L9.792 15.36V9.091l5.646 3.134Z" fill="currentColor"></path>
-      </svg></a>
-    </li></ul><div class="h-stack gap-6"><link rel="stylesheet" href="css/country-flags.css" media="all" onload="this.media='all'; this.onload = null"><div class="relative">
-      <button type="button" class="text-with-icon gap-2.5 group" aria-controls="popover-localization-form-country--sections--21619356860733__footer" aria-expanded="false" aria-haspopup="dialog">
-        <div class="h-stack gap-2"><span class="country-flags country-flags--US"></span><span class="bold text-sm">United States (USD $)</span>
-        </div><svg role="presentation" focusable="false" width="10" height="7" class="icon icon-chevron-bottom" viewBox="0 0 10 7">
-        <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
-      </svg></button>
-
-      <x-popover id="popover-localization-form-country--sections--21619356860733__footer" initial-focus="[aria-selected='true']" anchor-horizontal="end" anchor-vertical="start" class="popover" role="dialog">
-        <p class="h5" slot="title">País</p><form method="post" action="/localization" id="localization-form-country--sections--21619356860733__footer" accept-charset="UTF-8" class="shopify-localization-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="return_to" value="/"><x-listbox class="popover-listbox popover-listbox--sm" role="listbox" aria-activedescendant="option-c1d5268d-f2e3-45f7-8b00-79bd03bbd798"><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="AU" id="option-c34e1e83-055d-4ab7-8b35-92bb953a4f52">
-                <span class="country-flags country-flags--AU"></span>
-                <span>Australia (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="AT" id="option-80e4f631-9018-4f02-8dbf-6095f94ae2c6">
-                <span class="country-flags country-flags--AT"></span>
-                <span>Austria (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="BE" id="option-461d30a8-b155-4533-8eda-6ae05e56f294">
-                <span class="country-flags country-flags--BE"></span>
-                <span>Belgium (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="CZ" id="option-12f12dee-95ee-4b7a-8997-b3ac9f267327">
-                <span class="country-flags country-flags--CZ"></span>
-                <span>Czechia (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="DK" id="option-1401959f-f7a4-4bd2-b05c-45bc83a33f7f">
-                <span class="country-flags country-flags--DK"></span>
-                <span>Denmark (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="FI" id="option-4d578a18-e33d-4156-baf9-cfc1d8329ca0">
-                <span class="country-flags country-flags--FI"></span>
-                <span>Finland (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="FR" id="option-84d9a600-75a2-4b7a-a713-bb3844a26f0a">
-                <span class="country-flags country-flags--FR"></span>
-                <span>France (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="DE" id="option-07c5934b-f74f-42d1-912e-d35d96a27d10">
-                <span class="country-flags country-flags--DE"></span>
-                <span>Germany (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="IE" id="option-f51b0b6f-02a0-407a-9456-d23cc26a9c54">
-                <span class="country-flags country-flags--IE"></span>
-                <span>Ireland (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="IL" id="option-6fe7f989-899c-47c6-ae26-15398986075a">
-                <span class="country-flags country-flags--IL"></span>
-                <span>Israel (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="IT" id="option-7e415c75-2130-4f7c-b902-33f093c81dee">
-                <span class="country-flags country-flags--IT"></span>
-                <span>Italy (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="MY" id="option-7b5c855c-19f3-4cc7-a1cf-a7b6c5e58499">
-                <span class="country-flags country-flags--MY"></span>
-                <span>Malaysia (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="NL" id="option-1b4bf8ed-2c46-4e5b-a400-b24f908f71ad">
-                <span class="country-flags country-flags--NL"></span>
-                <span>Netherlands (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="NZ" id="option-f72fde52-ed6c-4782-afc0-4be526b3260f">
-                <span class="country-flags country-flags--NZ"></span>
-                <span>New Zealand (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="NO" id="option-328a9cd1-2c71-4535-ab06-55bd67451636">
-                <span class="country-flags country-flags--NO"></span>
-                <span>Norway (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="PL" id="option-455dee86-6472-4d30-ad9b-982fc72465ad">
-                <span class="country-flags country-flags--PL"></span>
-                <span>Poland (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="PT" id="option-eb73c30d-50f1-4504-90a4-2f00e5810d4a">
-                <span class="country-flags country-flags--PT"></span>
-                <span>Portugal (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="SG" id="option-6412b822-5d4f-479b-8228-361a2a00a5bc">
-                <span class="country-flags country-flags--SG"></span>
-                <span>Singapore (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="KR" id="option-02a834df-49a9-4fe3-a9ed-c82fcd54e117">
-                <span class="country-flags country-flags--KR"></span>
-                <span>South Korea (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="ES" id="option-b42e85ac-2c32-44fc-a3d9-6c58fed5d1de">
-                <span class="country-flags country-flags--ES"></span>
-                <span>Spain (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="SE" id="option-ee0dfcab-2c53-4a31-9a70-7b22dfb42ed9">
-                <span class="country-flags country-flags--SE"></span>
-                <span>Sweden (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="CH" id="option-61efb554-8bbe-4318-9959-0950f13eacbb">
-                <span class="country-flags country-flags--CH"></span>
-                <span>Switzerland (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="AE" id="option-74bb7557-4d3c-4308-aad0-180434133d02">
-                <span class="country-flags country-flags--AE"></span>
-                <span>United Arab Emirates (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="GB" id="option-cdaef059-5200-48ab-9e11-f310f9857010">
-                <span class="country-flags country-flags--GB"></span>
-                <span>United Kingdom (USD $)</span>
-              </button><button type="submit" class="popover-listbox__option" name="country_code" role="option" value="US" aria-selected="true" id="option-c1d5268d-f2e3-45f7-8b00-79bd03bbd798">
-                <span class="country-flags country-flags--US"></span>
-                <span>United States (USD $)</span>
-              </button></x-listbox></form></x-popover>
-    </div></div><div class="footer-payment-icons">
-              <figure>
-                <img src="images/Millab_Homepage_Customize_1.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_2.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_3.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_4.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_5.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_6.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_7.png" width="38px" height="24px">
-              </figure>
-              <figure>
-                <img src="images/Millab_Homepage_Customize_8.png" width="38px" height="24px">
-              </figure>
-            </div>
-          </div><div class="footer__aside-bottom">
-          <p class="footer__copyright text-sm text-subdued">© 2026, Millab.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<style> #shopify-section-sections--21619356860733__footer .footer__block-list {column-gap: 10px;} </style></footer>
-<!-- END sections: footer-group --></main>
-  <style> footer {--footer-block-list-gap: 10px;} </style>
-<div id="shopify-block-ANW51T1FqOURuNlhoU__15714838451323730227" class="shopify-block shopify-app-block">
-<!-- BEGIN app snippet: salepify-load-once -->
-<!-- END app snippet -->
-<!-- BEGIN app snippet: salepify-load-once -->
-<!-- END app snippet -->
-<!-- BEGIN app snippet: salepify-load-once -->
-<!-- END app snippet -->
-<!-- BEGIN app snippet: salepify-load-once -->
-<!-- END app snippet -->
-
-
-
-
-
-
-
-
-</div><div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-97943869-LAX-610a19cewf693d529pf324840bm6169d9b4" src="https://millab.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-97943869@1/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-97943869-LAX-610a19cewf693d529pf324840bm6169d9b4" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-610a19cewf693d529pf324840bm6169d9b4" src="https://millab.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-shopify-custom-pixel@0530/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-610a19cewf693d529pf324840bm6169d9b4" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div><div id="shopify-block-AaUY3TDlOK3J2UVAyQ__4015264832934714879" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: ecomsend-app --><script type="text/javascript">
-  //SendWILL APPS COMMON JS CODE
-  window.EcomSendApps = window.EcomSendApps || {}
-
-  window.EcomSendApps.design_mode = false
-  
-
-  window.EcomSendApps.common = window.EcomSendApps.common || {}
-  window.EcomSendApps.common.shop = {
-    permanent_domain: 'millab-re.myshopify.com',
-    currency: "USD",
-    money_format: "${{amount}}",
-    id: 83782926653,
-  }
-
-  
-  
-    window.EcomSendApps.common.customer = {
-      id: null,
-      tags: null,
-      email: null,
-      accepts_marketing: null,
-      first_name: null,
-    }
-  
-
-  
-  window.EcomSendApps.common.template = 'index'
-</script>
-<!-- END app snippet -->
-
-
-
-<style id="ecomsend-custom-style"></style>
-
-<script>window.shopLocale = 'en'</script>
-
-
-
-
-
-</div>
-<shopify-store store-domain="https://millab.com" country="US" language="en"></shopify-store>
-<shopify-chat view="chat" class="needsclick"></shopify-chat>
-
-<shop-cart-sync data-instance-id="64124359-02e5-477d-8d26-751129edba12"></shop-cart-sync><script type="module">import pixel from "https://mcjs.prd.a.intuit.com/assets/pixel-reporting-sdk/1.22.0/pixel-reporting-sdk.js";window.$mcSite.pixel.api = pixel;</script></body></html>
+</main>
+<footer>
+  <p class="foot-brand">RUSTIC</p>
+  <p class="foot-copy">© 2026 RUSTIC</p>
+</footer>
+</body>
+</html>

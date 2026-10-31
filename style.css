@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #faf8f5; color: #1c1a17; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.top { position: absolute; top: 0; left: 0; right: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 22px 28px; }
+.top .brand { color: #fff; font-size: 15px; font-weight: 500; letter-spacing: .42em; text-shadow: 0 1px 12px rgba(0,0,0,.55); }
+.top a { color: #fff; text-decoration: none; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; text-shadow: 0 1px 12px rgba(0,0,0,.55); }
+.hero { position: relative; height: 100svh; min-height: 560px; background: #101010; display: grid; place-items: center; overflow: hidden; }
+.hero video { width: 100%; height: 100%; object-fit: contain; display: block; }
+.hero h1 { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #fff; font-size: clamp(3.2rem, 14vw, 10rem); font-weight: 300; letter-spacing: .38em; padding-left: .38em; text-shadow: 0 2px 30px rgba(0,0,0,.6), 0 1px 4px rgba(0,0,0,.6); white-space: nowrap; }
+main { max-width: 1240px; margin: 0 auto; padding: 72px 24px 40px; }
+.section-title { font-size: 13px; letter-spacing: .32em; text-transform: uppercase; color: #8a8378; text-align: center; }
+.section-sub { font-size: 14px; color: #a49c90; text-align: center; margin-top: 8px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+.card { background: #fff; border: 1px solid #e9e2d8; border-radius: 18px; padding: 14px 14px 20px; }
+.photo { aspect-ratio: 4 / 5; background: #f6f3ee; border-radius: 12px; overflow: hidden; }
+.photo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.card h2 { font-size: 17px; font-weight: 500; margin-top: 16px; line-height: 1.35; }
+.card .price { font-size: 16px; font-weight: 650; margin-top: 5px; }
+.card .note { font-size: 14px; color: #8a8378; margin-top: 5px; line-height: 1.45; }
+footer { text-align: center; padding: 56px 24px 64px; }
+.foot-brand { font-size: 13px; letter-spacing: .42em; padding-left: .42em; color: #1c1a17; }
+.foot-copy { font-size: 13px; color: #a49c90; margin-top: 10px; }
+@media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; gap: 22px; }
+  main { padding: 56px 18px 32px; }
+  .top { padding: 18px 20px; }
+  .hero { min-height: 520px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
