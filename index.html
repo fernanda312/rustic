@@ -584,7 +584,7 @@ collection-list, scroll-carousel, section-header { display: block; }
 </style>
 </head>
 
-  <body class="zoom-image--enabled"><div id="ecomsend-widget"><div class="EcomSendAPP"></div></div><!-- DRAWER -->
+  <body class="zoom-image--enabled"><video id="rustic-bg" autoplay muted loop playsinline preload="auto" src="videos/fundo-chuva.mp4"></video><div id="ecomsend-widget"><div class="EcomSendAPP"></div></div><!-- DRAWER -->
 <template id="drawer-default-template">
   <style>
     [hidden] {
@@ -791,7 +791,7 @@ collection-list, scroll-carousel, section-header { display: block; }
       </collection-list>
     </scroll-carousel></div>
   </div>
-</section>
+</section><section class="shopify-section shopify-section--rustic-video"><video autoplay muted loop playsinline preload="metadata" src="videos/stock-1.mp4"></video></section>
 
 <section id="colecao" class="shopify-section shopify-section--rustic-colecao">
   <div class="section section-blends section-full">
@@ -971,17 +971,17 @@ collection-list, scroll-carousel, section-header { display: block; }
       </article>
     </div>
   </div>
-</section>
+</section><section class="shopify-section shopify-section--rustic-video"><video autoplay muted loop playsinline preload="metadata" src="videos/stock-2.mp4"></video></section>
 
 <section id="shopify-section-template--21619357450557__rustic-banner" class="shopify-section shopify-section--image-with-text-overlay"><style>
   #shopify-section-template--21619357450557__rustic-banner {--section-outer-spacing-block: 0;--content-over-media-overlay: 0 0 0 / 0.25;}
 </style>
   <div class="section section-blends section-full text-custom" style="--text-color: 255 255 255;">
-    <image-banner class="content-over-media content-over-media--lg full-bleed text-custom rustic-banner" style="--text-color: 255 255 255;"><img src="images/r07.jpg" alt="Mesa de centro onda" loading="lazy" sizes="100vw"><div class="place-self-center text-center sm:place-self-center sm:text-center text-align-center">
+    <image-banner class="content-over-media content-over-media--lg full-bleed text-custom rustic-banner" style="--text-color: 255 255 255;"><img src="images/destaque.jpg" alt="Cadeira rústica em madeira e pedra" loading="lazy" sizes="100vw"><div class="place-self-center text-center sm:place-self-center sm:text-center text-align-center">
       <div class="prose"><p class="h2">Móveis rústicos</p></div>
     </div></image-banner>
   </div>
-</section>
+</section><section class="shopify-section shopify-section--rustic-video"><video autoplay muted loop playsinline preload="metadata" src="videos/stock-3.mp4"></video></section>
 <!-- BEGIN sections: footer-group -->
 <footer id="shopify-section-sections--21619356860733__footer" class="shopify-section shopify-section-group-footer-group shopify-section--footer"><style>
   @media screen and (min-width: 1000px) {
@@ -1020,4 +1020,11 @@ collection-list, scroll-carousel, section-header { display: block; }
 
 
 
-</body></html>
+<style>
+#rustic-bg{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;z-index:0;pointer-events:none;background:#000}
+main#main{position:relative;z-index:1}
+main#main .shopify-section,main#main .section{background:transparent !important;background-color:transparent !important}
+footer.shopify-section--footer,footer .footer{background:transparent !important;background-color:transparent !important}
+.shopify-section--rustic-video{background:#000}
+.shopify-section--rustic-video video{display:block;width:100%;max-height:80vh;margin:0 auto;object-fit:contain;background:#000}
+</style></body></html>
