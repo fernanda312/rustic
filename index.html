@@ -15,16 +15,11 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--bone);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img,video{display:block}
-header{position:sticky;top:0;z-index:50;background:#000;border-bottom:1px solid var(--line)}
-.head{max-width:1320px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;letter-spacing:.34em;padding-left:.34em;text-decoration:none;color:var(--bone)}
-nav{display:flex;flex-wrap:wrap;gap:28px;justify-content:flex-end}
-nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
-nav a:hover{color:var(--bone)}
 .hero{position:relative;background:#000}
-.hero video{width:100%;height:auto;max-height:92svh;object-fit:contain;margin:0 auto}
+.hero video{width:100%;height:auto;max-height:100svh;object-fit:contain;margin:0 auto}
 .hero-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
-.hero-title h1{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:clamp(56px,11vw,148px);letter-spacing:.30em;padding-left:.30em;color:var(--bone);animation:rise 1.4s ease both}
+.hero-title h1{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:clamp(44px,8vw,110px);letter-spacing:.30em;padding-left:.30em;color:var(--bone);animation:rise 1.4s ease both}
 .wrap{max-width:1320px;margin:0 auto;padding:96px 32px 0}
 .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--tan);margin:0 0 14px}
 .sec-title{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clamp(30px,4.4vw,52px);line-height:1.15;margin:0}
@@ -52,28 +47,17 @@ footer{border-top:1px solid var(--line);margin-top:96px;padding:56px 32px 64px;t
 footer .brand{font-size:22px}
 footer p{margin:12px 0 0;color:var(--muted);font-size:13px}
 footer .copy{font-size:12px}
+.foot-nav{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;margin:26px 0 0}
+.foot-nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.foot-nav a:hover{color:var(--bone)}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .sec{animation:rise .9s ease both}
 @media(max-width:1024px){.cat-grid{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr);gap:56px 32px}}
-@media(max-width:720px){.head{flex-direction:column;padding:16px 20px;gap:12px}nav{justify-content:center;gap:18px}.wrap{padding:64px 20px 0}.grid{grid-template-columns:1fr;gap:48px}.cat-grid{grid-template-columns:repeat(2,1fr);gap:16px}footer{margin-top:64px}}
+@media(max-width:720px){.wrap{padding:64px 20px 0}.grid{grid-template-columns:1fr;gap:48px}.cat-grid{grid-template-columns:repeat(2,1fr);gap:16px}footer{margin-top:64px}}
 @media(prefers-reduced-motion:reduce){.hero-title h1,.sec{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header>
-  <div class="head">
-    <a class="brand" href="#">RUSTIC</a>
-    <nav>
-      <a href="#colecao">Mesas de apoio</a>
-      <a href="#colecao">Mesas de centro</a>
-      <a href="#colecao">Poltronas</a>
-      <a href="#colecao">Candeeiros</a>
-      <a href="#colecao">Decoração</a>
-      <a href="#footer">Contacto</a>
-      <a href="#footer">Sobre nós</a>
-    </nav>
-  </div>
-</header>
 <main>
   <section class="hero">
     <video autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg">
@@ -170,6 +154,13 @@ footer .copy{font-size:12px}
 </main>
 <footer id="footer">
   <a class="brand" href="#">RUSTIC</a>
+  <nav class="foot-nav">
+    <a href="#colecao">Mesas de apoio</a>
+    <a href="#colecao">Mesas de centro</a>
+    <a href="#colecao">Poltronas</a>
+    <a href="#colecao">Candeeiros</a>
+    <a href="#colecao">Decoração</a>
+  </nav>
   <p>Móveis rústicos</p>
   <p class="copy">© 2026 RUSTIC</p>
 </footer>
