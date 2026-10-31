@@ -1,1030 +1,177 @@
-<html class="js native-share--enabled" lang="pt" dir="ltr" style="--header-height: 60px;"><head><script>window.Shopify = window.Shopify || {}; window.Shopify.designMode = false; window.Shopify.routes = window.Shopify.routes || {root: "/"}; window.Shopify.loadFeatures = window.Shopify.loadFeatures || function(){}; window.Shopify.locale = "pt"; window.Shopify.currency = {"active":"MZN","rate":"1.0"}; window.Shopify.country = "MZ"; window.Shopify.theme = {"name":"RUSTIC"};</script>
-
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="theme-color" content="#000000">
-
-    <title>RUSTIC — Móveis rústicos</title><meta name="description" content="Móveis rústicos.">
-      
-    
-    <link rel="preload" href="fonts/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="fonts/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2" as="font" type="font/woff2" crossorigin=""><meta property="og:type" content="website">
-  <meta property="og:title" content="RUSTIC — Móveis rústicos"><meta property="og:image" content="images/hero-poster.jpg">
-  <meta property="og:image:secure_url" content="images/hero-poster.jpg">
-  <meta property="og:image:width" content="3000">
-  <meta property="og:image:height" content="1650"><meta property="og:description" content="Móveis rústicos.">
-<meta property="og:site_name" content="RUSTIC"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="RUSTIC — Móveis rústicos">
-  <meta name="twitter:description" content="Móveis rústicos."><meta name="twitter:image" content="images/hero-poster.jpg">
-  <meta name="twitter:image:alt" content="">
-
-
-  
-
-<style>/* Typography (heading) */
-  @font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-  src: url('images/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2') format("woff2"),
-       url('images/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: italic;
-  font-display: fallback;
-  src: url('images/jost_i4.b690098389649750ada222b9763d55796c5283a5.woff2') format("woff2"),
-       url('images/jost_i4.fd766415a47e50b9e391ae7ec04e2ae25e7e28b0.woff') format("woff");
-}
-
-/* Typography (body) */
-  @font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-  src: url('images/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2') format("woff2"),
-       url('images/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 400;
-  font-style: italic;
-  font-display: fallback;
-  src: url('images/jost_i4.b690098389649750ada222b9763d55796c5283a5.woff2') format("woff2"),
-       url('images/jost_i4.fd766415a47e50b9e391ae7ec04e2ae25e7e28b0.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 700;
-  font-style: normal;
-  font-display: fallback;
-  src: url('images/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2') format("woff2"),
-       url('images/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff') format("woff");
-}
-
-@font-face {
-  font-family: Jost;
-  font-weight: 700;
-  font-style: italic;
-  font-display: fallback;
-  src: url('images/jost_i7.d8201b854e41e19d7ed9b1a31fe4fe71deea6d3f.woff2') format("woff2"),
-       url('images/jost_i7.eae515c34e26b6c853efddc3fc0c552e0de63757.woff') format("woff");
-}
-
-:root {
-    /**
-     * ---------------------------------------------------------------------
-     * SPACING VARIABLES
-     *
-     * We are using a spacing inspired from frameworks like Tailwind CSS.
-     * ---------------------------------------------------------------------
-     */
-    --spacing-0-5: 0.125rem; /* 2px */
-    --spacing-1: 0.25rem; /* 4px */
-    --spacing-1-5: 0.375rem; /* 6px */
-    --spacing-2: 0.5rem; /* 8px */
-    --spacing-2-5: 0.625rem; /* 10px */
-    --spacing-3: 0.75rem; /* 12px */
-    --spacing-3-5: 0.875rem; /* 14px */
-    --spacing-4: 1rem; /* 16px */
-    --spacing-4-5: 1.125rem; /* 18px */
-    --spacing-5: 1.25rem; /* 20px */
-    --spacing-5-5: 1.375rem; /* 22px */
-    --spacing-6: 1.5rem; /* 24px */
-    --spacing-6-5: 1.625rem; /* 26px */
-    --spacing-7: 1.75rem; /* 28px */
-    --spacing-7-5: 1.875rem; /* 30px */
-    --spacing-8: 2rem; /* 32px */
-    --spacing-8-5: 2.125rem; /* 34px */
-    --spacing-9: 2.25rem; /* 36px */
-    --spacing-9-5: 2.375rem; /* 38px */
-    --spacing-10: 2.5rem; /* 40px */
-    --spacing-11: 2.75rem; /* 44px */
-    --spacing-12: 3rem; /* 48px */
-    --spacing-14: 3.5rem; /* 56px */
-    --spacing-16: 4rem; /* 64px */
-    --spacing-18: 4.5rem; /* 72px */
-    --spacing-20: 5rem; /* 80px */
-    --spacing-24: 6rem; /* 96px */
-    --spacing-28: 7rem; /* 112px */
-    --spacing-32: 8rem; /* 128px */
-    --spacing-36: 9rem; /* 144px */
-    --spacing-40: 10rem; /* 160px */
-    --spacing-44: 11rem; /* 176px */
-    --spacing-48: 12rem; /* 192px */
-    --spacing-52: 13rem; /* 208px */
-    --spacing-56: 14rem; /* 224px */
-    --spacing-60: 15rem; /* 240px */
-    --spacing-64: 16rem; /* 256px */
-    --spacing-72: 18rem; /* 288px */
-    --spacing-80: 20rem; /* 320px */
-    --spacing-96: 24rem; /* 384px */
-
-    /* Container */
-    --container-max-width: 1600px;
-    --container-narrow-max-width: 1350px;
-    --container-gutter: var(--spacing-5);
-    --section-outer-spacing-block: var(--spacing-8);
-    --section-inner-max-spacing-block: var(--spacing-8);
-    --section-inner-spacing-inline: var(--container-gutter);
-    --section-stack-spacing-block: var(--spacing-8);
-
-    /* Grid gutter */
-    --grid-gutter: var(--spacing-5);
-
-    /* Product list settings */
-    --product-list-row-gap: var(--spacing-8);
-    --product-list-column-gap: var(--grid-gutter);
-
-    /* Form settings */
-    --input-gap: var(--spacing-2);
-    --input-height: 2.625rem;
-    --input-padding-inline: var(--spacing-4);
-
-    /* Other sizes */
-    --sticky-area-height: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px) + var(--sticky-header-enabled, 0) * var(--header-height, 0px));
-
-    /* RTL support */
-    --transform-logical-flip: 1;
-    --transform-origin-start: left;
-    --transform-origin-end: right;
-
-    /**
-     * ---------------------------------------------------------------------
-     * TYPOGRAPHY
-     * ---------------------------------------------------------------------
-     */
-
-    /* Font properties */
-    
-      --heading-font-family: Futura LT;
-      --heading-font-weight: 900;
-      --heading-font-style: normal;
-    
-    
-    
-      --text-font-family: Futura LT;
-      --text-font-weight: 400;
-      --text-font-style: normal;
-    
-    
-    --heading-text-transform: normal;
-    --heading-letter-spacing: 0.0em;
-    --text-letter-spacing: 0.0em;
-
-    /* Font sizes */
-    --text-h0: 2.75rem;
-    --text-h1: 2rem;
-    --text-h2: 1.75rem;
-    --text-h3: 1.375rem;
-    --text-h4: 1.125rem;
-    --text-h5: 1.125rem;
-    --text-h6: 1rem;
-    --text-xs: 0.6875rem;
-    --text-sm: 0.75rem;
-    --text-base: 0.875rem;
-    --text-lg: 1.125rem;
-
-    /**
-     * ---------------------------------------------------------------------
-     * COLORS
-     * ---------------------------------------------------------------------
-     */
-
-    /* Color settings */--accent: 51 51 51;
-    --text-primary: 255 255 255;
-    --background-primary: 0 0 0;
-    --dialog-background: 0 0 0;
-    --border-color: var(--text-color, var(--text-primary)) / 0.12;
-
-    /* Button colors */
-    --button-background-primary: 51 51 51;
-    --button-text-primary: 255 255 255;
-    --button-background-secondary: 134 111 77;
-    --button-text-secondary: 255 255 255;
-
-    /* Status colors */
-    --success-background: 224 244 232;
-    --success-text: 0 163 65;
-    --warning-background: 255 246 233;
-    --warning-text: 255 183 74;
-    --error-background: 254 231 231;
-    --error-text: 248 58 58;
-
-    /* Product colors */
-    --on-sale-text: 248 58 58;
-    --on-sale-badge-background: 248 58 58;
-    --on-sale-badge-text: 255 255 255;
-    --sold-out-badge-background: 0 0 0;
-    --sold-out-badge-text: 255 255 255;
-    --primary-badge-background: 128 60 238;
-    --primary-badge-text: 255 255 255;
-    --star-color: 255 183 74;
-    --product-card-background: 0 0 0;
-    --product-card-text: 255 255 255;
-
-    /* Header colors */
-    --header-background: 0 0 0;
-    --header-text: 255 255 255;
-
-    /* Footer colors */
-    --footer-background: 0 0 0;
-    --footer-text: 255 255 255;
-
-    /* Rounded variables (used for border radius) */
-    --rounded-xs: 0.25rem;
-    --rounded-sm: 0.375rem;
-    --rounded: 0.75rem;
-    --rounded-lg: 1.5rem;
-    --rounded-full: 9999px;
-
-    --rounded-button: 0.25rem;
-    --rounded-input: 0.5rem;
-
-    /* Box shadow */
-    --shadow-sm: 0 2px 8px rgb(var(--text-primary) / 0.1);
-    --shadow: 0 5px 15px rgb(var(--text-primary) / 0.1);
-    --shadow-md: 0 5px 30px rgb(var(--text-primary) / 0.1);
-    --shadow-block: 0px 18px 50px rgb(var(--text-primary) / 0.1);
-
-    /**
-     * ---------------------------------------------------------------------
-     * OTHER
-     * ---------------------------------------------------------------------
-     */
-
-    --cursor-close-svg-url: url('images/cursor-close.svg');
-    --cursor-zoom-in-svg-url: url('images/cursor-zoom-in.svg');
-    --cursor-zoom-out-svg-url: url('images/cursor-zoom-out.svg');
-    --checkmark-svg-url: url('images/checkmark.svg');
-  }
-
-  [dir="rtl"]:root {
-    /* RTL support */
-    --transform-logical-flip: -1;
-    --transform-origin-start: right;
-    --transform-origin-end: left;
-  }
-
-  @media screen and (min-width: 700px) {
-    :root {
-      /* Typography (font size) */
-      --text-h0: 3.5rem;
-      --text-h1: 2.5rem;
-      --text-h2: 2rem;
-      --text-h3: 1.625rem;
-      --text-h4: 1.375rem;
-      --text-h5: 1.125rem;
-      --text-h6: 1rem;
-
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1.0rem;
-      --text-lg: 1.25rem;
-
-      /* Spacing */
-      --container-gutter: 2rem;
-      --section-outer-spacing-block: var(--spacing-12);
-      --section-inner-max-spacing-block: var(--spacing-10);
-      --section-inner-spacing-inline: var(--spacing-12);
-      --section-stack-spacing-block: var(--spacing-10);
-
-      /* Grid gutter */
-      --grid-gutter: var(--spacing-6);
-
-      /* Product list settings */
-      --product-list-row-gap: var(--spacing-12);
-
-      /* Form settings */
-      --input-gap: 1rem;
-      --input-height: 3.125rem;
-      --input-padding-inline: var(--spacing-5);
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    :root {
-      /* Spacing settings */
-      --container-gutter: var(--spacing-12);
-      --section-outer-spacing-block: var(--spacing-14);
-      --section-inner-max-spacing-block: var(--spacing-12);
-      --section-inner-spacing-inline: var(--spacing-16);
-      --section-stack-spacing-block: var(--spacing-10);
-    }
-  }
-
-  @media screen and (min-width: 1150px) {
-    :root {
-      /* Spacing settings */
-      --container-gutter: var(--spacing-12);
-      --section-outer-spacing-block: var(--spacing-14);
-      --section-inner-max-spacing-block: var(--spacing-12);
-      --section-inner-spacing-inline: var(--spacing-16);
-      --section-stack-spacing-block: var(--spacing-12);
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    :root {
-      /* Typography (font size) */
-      --text-h0: 4.5rem;
-      --text-h1: 3.5rem;
-      --text-h2: 2.75rem;
-      --text-h3: 2rem;
-      --text-h4: 1.75rem;
-      --text-h5: 1.375rem;
-      --text-h6: 1.25rem;
-
-      --section-outer-spacing-block: var(--spacing-16);
-      --section-inner-max-spacing-block: var(--spacing-14);
-      --section-inner-spacing-inline: var(--spacing-18);
-    }
-  }
-
-  @media screen and (min-width: 1600px) {
-    :root {
-      --section-outer-spacing-block: var(--spacing-16);
-      --section-inner-max-spacing-block: var(--spacing-16);
-      --section-inner-spacing-inline: var(--spacing-20);
-    }
-  }
-
-  /**
-   * ---------------------------------------------------------------------
-   * LIQUID DEPENDANT CSS
-   *
-   * Our main CSS is Liquid free, but some very specific features depend on
-   * theme settings, so we have them here
-   * ---------------------------------------------------------------------
-   */@media screen and (pointer: fine) {
-        .button:not([disabled]):hover, .btn:not([disabled]):hover, .shopify-payment-button__button--unbranded:not([disabled]):hover {
-          --button-background-opacity: 0.85;
-        }
-
-        .button--subdued:not([disabled]):hover {
-          --button-background: var(--text-color) / .05 !important;
-        }
-      }</style><script>
-  document.documentElement.classList.replace('no-js', 'js');
-
-  // This allows to expose several variables to the global scope, to be used in scripts
-  window.themeVariables = {
-    settings: {
-      showPageTransition: true,
-      headingApparition: "split_fade",
-      pageType: "index",
-      moneyFormat: "${{amount}}",
-      moneyWithCurrencyFormat: "${{amount}} MT",
-      currencyCodeEnabled: false,
-      cartType: "page",
-      showDiscount: true,
-      discountMode: "saving"
-    },
-
-    strings: {
-      accessibilityClose: "Close",
-      accessibilityNext: "Next",
-      accessibilityPrevious: "Previous",
-      addToCartButton: "Add to cart",
-      soldOutButton: "Sold out",
-      preOrderButton: "Pre-order",
-      unavailableButton: "Unavailable",
-      closeGallery: "Close gallery",
-      zoomGallery: "Zoom",
-      errorGallery: "Image cannot be loaded",
-      soldOutBadge: "Sold out",
-      discountBadge: "Save @@",
-      sku: "SKU:",
-      searchNoResults: "No results could be found.",
-      addOrderNote: "Add order note",
-      editOrderNote: "Edit order note",
-      shippingEstimatorNoResults: "Sorry, we do not ship to your address.",
-      shippingEstimatorOneResult: "There is one shipping rate for your address:",
-      shippingEstimatorMultipleResults: "There are several shipping rates for your address:",
-      shippingEstimatorError: "One or more error occurred while retrieving shipping rates:"
-    },
-
-    breakpoints: {
-      'sm': 'screen and (min-width: 700px)',
-      'md': 'screen and (min-width: 1000px)',
-      'lg': 'screen and (min-width: 1150px)',
-      'xl': 'screen and (min-width: 1400px)',
-
-      'sm-max': 'screen and (max-width: 699px)',
-      'md-max': 'screen and (max-width: 999px)',
-      'lg-max': 'screen and (max-width: 1149px)',
-      'xl-max': 'screen and (max-width: 1399px)'
-    }
-  };window.addEventListener('DOMContentLoaded', () => {
-      const isReloaded = (window.performance.navigation && window.performance.navigation.type === 1) || window.performance.getEntriesByType('navigation').map((nav) => nav.type).includes('reload');
-
-      if ('animate' in document.documentElement && window.matchMedia('(prefers-reduced-motion: no-preference)').matches && document.referrer.includes(location.host) && !isReloaded) {
-        document.body.animate({opacity: [0, 1]}, {duration: 115, fill: 'forwards'});
-      }
-    });
-
-    window.addEventListener('pageshow', (event) => {
-      document.body.classList.remove('page-transition');
-
-      if (event.persisted) {
-        document.body.animate({opacity: [0, 1]}, {duration: 0, fill: 'forwards'});
-      }
-    });// For detecting native share
-  document.documentElement.classList.add(`native-share--${navigator.share ? 'enabled' : 'disabled'}`);</script><script type="module" src="js/vendor.min.js"></script>
-    <script type="module" src="js/theme.js"></script>
-    <script type="module" src="js/sections.js"></script>
-
-     
-    
-    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="-Ubg7pI9MQjcvCBUUWJrnv71uI2HMRfsOhpkrhs9UHk">
-
-<script async="async" src="js/preloads.js"></script>
-
-<script async="async" src="js/preloads.js" crossorigin="anonymous"></script>
-
-
-
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script>
-  window.ShopifyPay = window.ShopifyPay || {};
-  window.ShopifyPay.apiHost = "shop.app\/pay";
-  window.ShopifyPay.redirectState = null;
-</script>
-
-
-
-
-
-
-
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
-<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="js/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
-<script crossorigin="anonymous" defer="defer" src="js/storefront-f0e26bdf.js"></script>
-
-
-
-<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
-  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
-</script>
-<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
-</script>
-<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="css/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
-<style id="shopify-accelerated-checkout-cart">
-        #shopify-buyer-consent {
-  margin-top: 1em;
-  display: inline-block;
-  width: 100%;
-}
-
-#shopify-buyer-consent.hidden {
-  display: none;
-}
-
-#shopify-subscription-policy-button {
-  background: none;
-  border: none;
-  padding: 0;
-  text-decoration: underline;
-  font-size: inherit;
-  cursor: pointer;
-}
-
-#shopify-subscription-policy-button::before {
-  box-shadow: none;
-}
-
-      </style>
-
-<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
-<link href="css/theme.css" rel="stylesheet" type="text/css" media="all"><!-- BEGIN app block: shopify://apps/instant-ai-page-builder/blocks/instant_core/927e19d9-4e68-41db-99c7-d8debdc1f80d -->
-
-
-<!-- END app block -->
-
-
-
-
-
-
-
-
-<meta name="shopify-y" content="01a66a03-1904-4548-a204-e26e14bdad7c" data-expiration="1824963173000"><meta name="shopify-s" content="40b0c3f4-f964-4b72-b400-bd52e97bbd7c" data-expiration="1793407373000"><meta name="request-id" content="3c5f790a-5664-4c3b-9477-766a71d1724a-1793405573">
-<style data-description="gravity-font-faces">
-@font-face {
-  font-family: 'GTStandard-M';
-  src: url('images/GTStandard-MRegular.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 450;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GTStandard-M';
-  src: url('images/GTStandard-MMedium.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GTStandard-M';
-  src: url('images/GTStandard-MSemibold.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}</style><meta http-equiv="origin-trial" content="A1duO9QWZ/3h+eq5jQsvYqOTVq5h5q2AoGInpwNr4FT22/JUt3BxFERXHAo5iKhs6doOavi6G5hno0oBANPzSgIAAABxeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJlcmVuZGVyVW50aWxTY3JpcHQiLCJleHBpcnkiOjE3ODg4MjU2MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="AwnTE1hYg9Bsa5x0wEDsbG6tOdZ3j6ebKzXxbr/2TnTilsCRK9FwndlhAyFVnnBH1qQAqpOPJxVWiKGUqBnOmAYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiTG9uZ0FuaW1hdGlvbkZyYW1lU3R5bGVEdXJhdGlvbiIsImV4cGlyeSI6MTc5MTI0NDgwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A1cNj7yeFpBT/ETqZHRgUfM9tToLwOpBySTd4C9Eya3JtQo/BEQegM6MMV7BZESSyAjQJJXYgH/ovHY1UHmB8woAAABjeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViTUNQIiwiZXhwaXJ5IjoxNzk0ODczNjAwLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1XQljJxk3U4c44gueu4vlIeDofyyWFswfVKbUiNw4itZx4Yy8Uw3nIhtzBePIrv1bSXqzHGDfYymYF5W7TKKAoAAABzeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25NZWFzdXJlbWVudCIsImV4cGlyeSI6MTc5MzY2NDAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Ax9yX6wXQN8G5IFmAMuROwlLDFBpw1CUnFgsIGNYqJJ4H6td1fqjIYkL02d7HpmOAFMFSi3/1kym00LEfYqOdwYAAACOeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25SdWxlc01vZGVyYXRlVmlld3BvcnRIZXVyaXN0aWNzQ29udHJvbCIsImV4cGlyeSI6MTc5NjY4ODAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="speculationrules">{}</script><link rel="stylesheet" href="css/style.css" data-ecomsend-tag="main-style"><script type="module" defer="" src="js/consent-tracking-api.js"></script><style>
-            .sr-only {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                white-space: nowrap;
-                border-width: 0;
-            }
-        </style>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RUSTIC — Móveis rústicos</title>
+<meta name="description" content="RUSTIC — móveis rústicos. Peças em madeira, pedra e metal, fotografadas por inteiro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* RUSTIC — camada sobre o tema: fundo preto puro, hero, grelha escura.
-   O tema (theme.css / style.css / fontes / scripts) fica intacto. */
-body, .shopify-section, .section, .footer { background-color: #000; }
-#shopify-section-sections--21619356893501__header .mega-menu { background-color: #000; }
-collection-list, scroll-carousel, section-header { display: block; }
-.rustic-logo-text { color: #fff; font-weight: 500; letter-spacing: .35em; text-indent: .35em; font-size: 1.15rem; line-height: 1; white-space: nowrap; }
-#colecao { scroll-margin-top: 90px; }
-.shopify-section--rustic-hero { margin-block: 0; }
-.rustic-hero { position: relative; background: #000; height: calc(100svh - var(--header-height, 72px)); min-height: 480px; display: grid; place-items: center; overflow: hidden; }
-.rustic-hero video { width: 100%; height: 100%; object-fit: contain; display: block; background: #000; }
-.rustic-hero__title { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; color: #fff; font-weight: 300; letter-spacing: .38em; text-indent: .38em; font-size: clamp(3rem, 13vw, 9rem); line-height: 1; white-space: nowrap; text-shadow: 0 2px 30px rgba(0,0,0,.65); }
-.rustic-cat-media { aspect-ratio: 1 / 1; }
-.rustic-cat-media > img { object-fit: contain !important; transform: none !important; }
-.rustic-banner > img { object-fit: contain !important; }
-.rustic-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-6, 1.5rem); }
-@media screen and (max-width: 699px) { .rustic-grid { grid-template-columns: repeat(2, 1fr); gap: var(--spacing-4, 1rem); } }
-@media screen and (max-width: 380px) { .rustic-grid { grid-template-columns: 1fr; } }
-.rustic-card { background: #111; border: 1px solid #262626; border-radius: var(--rounded-sm); overflow: hidden; }
-.rustic-card__media { aspect-ratio: 4 / 5; background: #000; display: grid; place-items: center; }
-.rustic-card__media img { width: 100%; height: 100%; object-fit: contain; display: block; }
-.rustic-card__info { padding: var(--spacing-4, 1rem); }
-.rustic-card__info .h4 { color: #fff; margin: 0 0 6px; }
-.rustic-card__price { color: #fff; font-weight: 600; margin: 0; }
-.rustic-card__note { color: #a3a3a3; margin: 0; }
+:root{--bg:#000;--panel:#0b0b0b;--line:#232323;--line2:#3d3d3d;--bone:#ece7dd;--muted:#a39e94;--tan:#c9b490}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--bone);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,video{display:block}
+header{position:sticky;top:0;z-index:50;background:#000;border-bottom:1px solid var(--line)}
+.head{max-width:1320px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;letter-spacing:.34em;padding-left:.34em;text-decoration:none;color:var(--bone)}
+nav{display:flex;flex-wrap:wrap;gap:28px;justify-content:flex-end}
+nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--bone)}
+.hero{position:relative;background:#000}
+.hero video{width:100%;height:auto;max-height:92svh;object-fit:contain;margin:0 auto}
+.hero-title{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.hero-title h1{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:clamp(56px,11vw,148px);letter-spacing:.30em;padding-left:.30em;color:var(--bone);animation:rise 1.4s ease both}
+.wrap{max-width:1320px;margin:0 auto;padding:96px 32px 0}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--tan);margin:0 0 14px}
+.sec-title{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:clamp(30px,4.4vw,52px);line-height:1.15;margin:0}
+.rule{width:56px;height:1px;background:var(--line2);margin:26px 0 44px}
+.cat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+.cat{background:var(--panel);border:1px solid var(--line);text-decoration:none;transition:border-color .3s}
+.cat:hover{border-color:var(--line2)}
+.cat img{width:100%;height:auto}
+.cat span{display:block;padding:16px 12px 18px;text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.video-sec{padding:72px 0 0}
+.video-sec video{width:100%;height:auto;max-height:78svh;object-fit:contain;margin:0 auto;background:#000}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:72px 48px}
+.card{background:var(--panel);border:1px solid var(--line);transition:border-color .3s}
+.card:hover{border-color:var(--line2)}
+.card img{width:100%;height:auto}
+.card-info{padding:22px 22px 24px}
+.card-info h3{margin:0 0 10px;font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:22px;line-height:1.25;color:var(--bone)}
+.card:hover .card-info h3{color:#fff}
+.price{margin:0;font-size:12px;letter-spacing:.14em;color:var(--bone)}
+.caption{margin:0;font-size:14px;line-height:1.55;color:var(--muted)}
+.banner{margin:0}
+.banner img{width:100%;height:auto}
+.banner-cap{padding:28px 0 0}
+footer{border-top:1px solid var(--line);margin-top:96px;padding:56px 32px 64px;text-align:center}
+footer .brand{font-size:22px}
+footer p{margin:12px 0 0;color:var(--muted);font-size:13px}
+footer .copy{font-size:12px}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.sec{animation:rise .9s ease both}
+@media(max-width:1024px){.cat-grid{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr);gap:56px 32px}}
+@media(max-width:720px){.head{flex-direction:column;padding:16px 20px;gap:12px}nav{justify-content:center;gap:18px}.wrap{padding:64px 20px 0}.grid{grid-template-columns:1fr;gap:48px}.cat-grid{grid-template-columns:repeat(2,1fr);gap:16px}footer{margin-top:64px}}
+@media(prefers-reduced-motion:reduce){.hero-title h1,.sec{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
-
-  <body class="zoom-image--enabled"><div id="ecomsend-widget"><div class="EcomSendAPP"></div></div><!-- DRAWER -->
-<template id="drawer-default-template">
-  <style>
-    [hidden] {
-      display: none !important;
-    }
-  </style>
-
-  <button part="outside-close-button" is="close-button" aria-label="Fechar"><svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button>
-
-  <div part="overlay"></div>
-
-  <div part="content">
-    <header part="header">
-      <slot name="header"></slot>
-
-      <button part="close-button" is="close-button" aria-label="Fechar"><svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button>
-    </header>
-
-    <div part="body">
-      <slot></slot>
-    </div>
-
-    <footer part="footer">
-      <slot name="footer"></slot>
-    </footer>
+<body>
+<header>
+  <div class="head">
+    <a class="brand" href="#">RUSTIC</a>
+    <nav>
+      <a href="#colecao">Mesas de apoio</a>
+      <a href="#colecao">Mesas de centro</a>
+      <a href="#colecao">Poltronas</a>
+      <a href="#colecao">Candeeiros</a>
+      <a href="#colecao">Decoração</a>
+      <a href="#footer">Contacto</a>
+      <a href="#footer">Sobre nós</a>
+    </nav>
   </div>
-</template>
-
-<!-- POPOVER -->
-<template id="popover-default-template">
-  <button part="outside-close-button" is="close-button" aria-label="Fechar"><svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button>
-
-  <div part="overlay"></div>
-
-  <div part="content">
-    <header part="title">
-      <slot name="title"></slot>
-    </header>
-
-    <div part="body">
-      <slot></slot>
-    </div>
-  </div>
-</template><a href="#main" class="skip-to-content sr-only">Saltar para o conteúdo</a><!-- BEGIN sections: header-group -->
-<header id="shopify-section-sections--21619356893501__header" class="shopify-section shopify-section-group-header-group shopify-section--header"><style>
-  :root {
-    --sticky-header-enabled:1;
-  }
-
-  #shopify-section-sections--21619356893501__header {
-    --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
-    --header-padding-block: var(--spacing-4-5);
-    --header-background-opacity: 1.0;
-    --header-background-blur-radius: 0px;
-    --header-transparent-text-color: 255 255 255;--header-logo-width: 100px;
-      --header-logo-height: 24px;position: sticky;
-    top: 0;
-    z-index: 10;
-  }.shopify-section--announcement-bar ~ #shopify-section-sections--21619356893501__header {
-      top: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px));
-    }@media screen and (min-width: 700px) {
-    #shopify-section-sections--21619356893501__header {--header-logo-width: 120px;
-        --header-logo-height: 29px;--header-padding-block: var(--spacing-8-5);
-    }
-  }@media screen and (min-width: 1150px) {#shopify-section-sections--21619356893501__header {
-        --header-grid-template: "logo main-nav secondary-nav" / minmax(0, 1fr) fit-content(70%) minmax(0, 1fr);
-      }
-    }#shopify-section-sections--21619356893501__header .mega-menu {
-      background-color: #dcdcdc;
-    }</style>
-
-<height-observer variable="header">
-  <store-header class="header" sticky="">
-    <div class="header__wrapper"><div class="header__main-nav">
-        <div class="header__icon-list">
-          <button type="button" class="tap-area lg:hidden" aria-controls="header-sidebar-menu">
-            <span class="sr-only">Abrir o menu</span><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-hamburger" viewBox="0 0 22 22">
-        <path d="M1 5h20M1 11h20M1 17h20" stroke="currentColor" stroke-linecap="round"></path>
-      </svg></button>
-
-          <nav class="header__link-list justify-center wrap" role="navigation">
-              <ul class="contents" role="list">
-
-                  <li><a href="#colecao" class="bold link-faded-reverse">Mesas de apoio</a></li>
-                  <li><a href="#colecao" class="bold link-faded-reverse">Mesas de centro</a></li>
-                  <li><a href="#colecao" class="bold link-faded-reverse">Poltronas</a></li>
-                  <li><a href="#colecao" class="bold link-faded-reverse">Candeeiros</a></li>
-                  <li><a href="#colecao" class="bold link-faded-reverse">Decoração</a></li>
-
-                  
-
-                  <li><a href="#footer" class="bold link-faded-reverse">Contacto</a></li>
-
-                  <li><a href="#footer" class="bold link-faded-reverse">Sobre nós</a></li></ul>
-            </nav></div>
-      </div><h1 class="header__logo">
-          <a href="/"><span class="rustic-logo-text">RUSTIC</span></a>
-        </h1>
-      
-<div class="header__secondary-nav"><div class="header__icon-list">
-        </div>
-      </div>
-    </div>
-  </store-header>
-</height-observer><navigation-drawer mobile-opening="bottom" open-from="left" id="header-sidebar-menu" class="navigation-drawer drawer lg:hidden" role="dialog" aria-modal="true">
-    <button is="close-button" aria-label="Fechar" class="sm-max:hidden"><svg role="presentation" stroke-width="2" focusable="false" width="19" height="19" class="icon icon-close" viewBox="0 0 24 24">
-        <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
-      </svg></button><div class="panel-list__wrapper">
-  <div class="panel">
-    <div class="panel__wrapper">
-      <div class="panel__scroller v-stack gap-8"><ul class="v-stack gap-4">
-<li class="h3 sm:h4"><a href="#colecao" class="group block w-full">
-                  <span><span class="reversed-link">Mesas de apoio</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="#colecao" class="group block w-full">
-                  <span><span class="reversed-link">Mesas de centro</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="#colecao" class="group block w-full">
-                  <span><span class="reversed-link">Poltronas</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="#colecao" class="group block w-full">
-                  <span><span class="reversed-link">Candeeiros</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="#colecao" class="group block w-full">
-                  <span><span class="reversed-link">Decoração</span></span>
-                </a></li>
-
-<li class="h3 sm:h4"><a href="#footer" class="group block w-full">
-                  <span><span class="reversed-link">Contacto</span></span>
-                </a></li>
-<li class="h3 sm:h4"><a href="#footer" class="group block w-full">
-                  <span><span class="reversed-link">Sobre nós</span></span>
-                </a></li></ul></div><div class="panel-footer v-stack gap-5"></div></div>
-  </div></div></navigation-drawer><script>
-  document.documentElement.style.setProperty('--header-height', Math.round(document.getElementById('shopify-section-sections--21619356893501__header').clientHeight) + 'px');
-</script>
-
 </header>
-<!-- END sections: header-group --><!-- BEGIN sections: overlay-group -->
-
-<!-- END sections: overlay-group --><main role="main" id="main" class="anchor">
-<section id="shopify-section-template--21619357450557__rustic-hero" class="shopify-section shopify-section--rustic-hero">
-  <div class="rustic-hero">
+<main>
+  <section class="hero">
     <video autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg">
       <source src="videos/hero.mp4" type="video/mp4">
     </video>
-    <h1 class="rustic-hero__title">RUSTIC</h1>
-  </div>
-</section>
+    <div class="hero-title"><h1>RUSTIC</h1></div>
+  </section>
 
-<section id="shopify-section-template--21619357450557__rustic-categorias" class="shopify-section shopify-section--collection-list"><style>
-  #shopify-section-template--21619357450557__rustic-categorias {
-    --section-background-hash: 0;
-  }
-
-  #shopify-section-template--21619357450557__rustic-categorias + * {
-    --previous-section-background-hash: 0;
-  }</style><style>
-  #shopify-section-template--21619357450557__rustic-categorias .collection-list {
-    --collection-list-grid: none;
-  }
-
-  @media screen and (min-width: 700px) {
-    #shopify-section-template--21619357450557__rustic-categorias .collection-list {
-      --collection-list-grid: auto / repeat(5, minmax(0, 1fr));
-    }
-  }
-</style>
-  <div class="section section-blends section-full">
-    <section-header class="section-header"><div class="prose"><h3>Categorias</h3></div></section-header>
-    <div class="floating-controls-container"><scroll-carousel selector=".collection-card" id="scroll-area-template--21619357450557__rustic-categorias" class="scroll-area bleed">
-      <collection-list class="collection-list">
-        <a href="#colecao" class="collection-card collection-card--reverse-transition shadow">
-          <div class="content-over-media group rounded-sm rustic-cat-media" style="--content-over-media-overlay: 0 0 0 / 0.3"><img src="images/r03.jpg" alt="Mesas de apoio" loading="eager" sizes="(max-width: 699px) 73vw, 800px"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">Mesas de apoio</p></div></div></div>
-        </a>
-        <a href="#colecao" class="collection-card collection-card--reverse-transition shadow">
-          <div class="content-over-media group rounded-sm rustic-cat-media" style="--content-over-media-overlay: 0 0 0 / 0.3"><img src="images/r05.jpg" alt="Mesas de centro" loading="lazy" sizes="(max-width: 699px) 73vw, 800px"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">Mesas de centro</p></div></div></div>
-        </a>
-        <a href="#colecao" class="collection-card collection-card--reverse-transition shadow">
-          <div class="content-over-media group rounded-sm rustic-cat-media" style="--content-over-media-overlay: 0 0 0 / 0.3"><img src="images/r08.jpg" alt="Poltronas" loading="lazy" sizes="(max-width: 699px) 73vw, 800px"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">Poltronas</p></div></div></div>
-        </a>
-        <a href="#colecao" class="collection-card collection-card--reverse-transition shadow">
-          <div class="content-over-media group rounded-sm rustic-cat-media" style="--content-over-media-overlay: 0 0 0 / 0.3"><img src="images/r06.jpg" alt="Candeeiros" loading="lazy" sizes="(max-width: 699px) 73vw, 800px"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">Candeeiros</p></div></div></div>
-        </a>
-        <a href="#colecao" class="collection-card collection-card--reverse-transition shadow">
-          <div class="content-over-media group rounded-sm rustic-cat-media" style="--content-over-media-overlay: 0 0 0 / 0.3"><img src="images/r22.jpg" alt="Decoração" loading="lazy" sizes="(max-width: 699px) 73vw, 800px"><div class="collection-card__content-wrapper text-custom place-self-end-start text-start" style="--text-color: 255 255 255"><svg role="presentation" focusable="false" width="40" height="40" class="icon icon-circle-button-right-clipped" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12ZM10.47 9.53 12.94 12l-2.47 2.47 1.06 1.06 3-3 .53-.53-.53-.53-3-3-1.06 1.06Z" fill="currentColor"></path>
-      </svg><div class="collection-card__content prose"><p class="h4">Decoração</p></div></div></div>
-        </a>
-      </collection-list>
-    </scroll-carousel></div>
-  </div>
-</section><section class="shopify-section shopify-section--rustic-video"><video autoplay muted loop playsinline preload="metadata" src="videos/stock-1.mp4"></video></section>
-
-<section id="colecao" class="shopify-section shopify-section--rustic-colecao">
-  <div class="section section-blends section-full">
-    <section-header class="section-header"><div class="prose"><h3>Coleção — 43 peças</h3></div></section-header>
-    <div class="rustic-grid">
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r01.jpg" alt="Mesa de apoio mármore" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio mármore</h3><p class="rustic-card__price">24.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r02.jpg" alt="Banco escultural laranja" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Banco escultural laranja</h3><p class="rustic-card__price">48.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r03.jpg" alt="Mesa de apoio madeira curvada" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio madeira curvada</h3><p class="rustic-card__price">28.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r04.jpg" alt="Mesa de apoio preta canelada" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio preta canelada</h3><p class="rustic-card__price">26.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r05.jpg" alt="Mesa de centro pedra" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de centro pedra</h3><p class="rustic-card__price">52.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r06.jpg" alt="Candeeiro de pé argolas" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Candeeiro de pé argolas</h3><p class="rustic-card__price">38.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r07.jpg" alt="Mesa de centro onda" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de centro onda</h3><p class="rustic-card__price">58.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r08.jpg" alt="Poltrona madeira e bouclé" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Poltrona madeira e bouclé</h3><p class="rustic-card__price">72.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r09.jpg" alt="Cabide de parede triangular" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Cabide de parede triangular</h3><p class="rustic-card__price">22.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r10.jpg" alt="Mesa de apoio Z" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio Z</h3><p class="rustic-card__price">27.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r11.jpg" alt="Mesa de sofá preta ripada" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de sofá preta ripada</h3><p class="rustic-card__price">24.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r12.jpg" alt="Mesa de apoio curva" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio curva</h3><p class="rustic-card__price">29.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r13.jpg" alt="Par de mesas curvas bronze" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Par de mesas curvas bronze</h3><p class="rustic-card__price">46.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r14.jpg" alt="Mesa de sofá preta" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de sofá preta</h3><p class="rustic-card__price">23.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r15.jpg" alt="Mesa de apoio betão" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio betão</h3><p class="rustic-card__price">27.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r16.jpg" alt="Mesa de apoio latão" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio latão</h3><p class="rustic-card__price">34.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r17.jpg" alt="Mesa de apoio torcida" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio torcida</h3><p class="rustic-card__price">36.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r18.jpg" alt="Mesa de apoio dourada" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio dourada</h3><p class="rustic-card__price">33.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r19.jpg" alt="Cadeira escultural branca" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Cadeira escultural branca</h3><p class="rustic-card__price">54.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r20.jpg" alt="Mesa de centro ripada" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de centro ripada</h3><p class="rustic-card__price">48.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r21.jpg" alt="Mesa de apoio vazada" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio vazada</h3><p class="rustic-card__price">25.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r22.jpg" alt="Relógio de parede pedra" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Relógio de parede pedra</h3><p class="rustic-card__price">24.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r23.jpg" alt="Par de poltronas bouclé" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Par de poltronas bouclé</h3><p class="rustic-card__price">128.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r24.jpg" alt="Mesa de apoio creme" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio creme</h3><p class="rustic-card__price">29.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r25.jpg" alt="Par de mesas quadradas" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Par de mesas quadradas</h3><p class="rustic-card__price">42.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r26.jpg" alt="Mesa de apoio mármore e bronze" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio mármore e bronze</h3><p class="rustic-card__price">35.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r27.jpg" alt="Mesa de apoio champanhe" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio champanhe</h3><p class="rustic-card__price">32.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r28.jpg" alt="Mesa de apoio verde" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio verde</h3><p class="rustic-card__price">31.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r29.jpg" alt="Mesa de apoio branca" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio branca</h3><p class="rustic-card__price">26.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r30.jpg" alt="Mesa de centro vidro" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de centro vidro</h3><p class="rustic-card__price">56.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r31.jpg" alt="Mesa de apoio mármore preto" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio mármore preto</h3><p class="rustic-card__price">33.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r32.jpg" alt="Mesa de apoio semicircular" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio semicircular</h3><p class="rustic-card__price">28.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r33.jpg" alt="Mesa de apoio bronze" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio bronze</h3><p class="rustic-card__price">31.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r34.jpg" alt="Mesa de apoio castanha" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio castanha</h3><p class="rustic-card__price">25.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r35.jpg" alt="Mesa de apoio seixos" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio seixos</h3><p class="rustic-card__price">34.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r36.jpg" alt="Mesa de apoio carvalho" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesa de apoio carvalho</h3><p class="rustic-card__price">27.500 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r37.jpg" alt="Conjunto de mesas geométricas" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Conjunto de mesas geométricas</h3><p class="rustic-card__price">68.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r38.jpg" alt="Candeeiro escultural cinzento" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Candeeiro escultural cinzento</h3><p class="rustic-card__price">29.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r39.jpg" alt="Mesas de centro madeira escura" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Mesas de centro madeira escura</h3><p class="rustic-card__price">44.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r40.jpg" alt="Materiais" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Materiais</h3><p class="rustic-card__note">Madeiras, mármores, metais e tecidos da coleção</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r41.jpg" alt="Conjunto de mesas curvas" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Conjunto de mesas curvas</h3><p class="rustic-card__price">64.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r42.jpg" alt="Par de mesas curvas bege" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Par de mesas curvas bege</h3><p class="rustic-card__price">44.000 MT</p></div>
-      </article>
-      <article class="rustic-card">
-        <div class="rustic-card__media"><img src="images/r43.jpg" alt="Bancos de bar" loading="lazy"></div>
-        <div class="rustic-card__info"><h3 class="h4">Bancos de bar</h3><p class="rustic-card__price">96.000 MT</p></div>
-      </article>
+  <section class="wrap sec">
+    <p class="eyebrow">Explorar</p>
+    <h2 class="sec-title">Categorias</h2>
+    <div class="rule"></div>
+    <div class="cat-grid">
+<a class="cat" href="#colecao"><img src="images/r03.jpg" alt="Mesas de apoio" loading="lazy"><span>Mesas de apoio</span></a>
+<a class="cat" href="#colecao"><img src="images/r05.jpg" alt="Mesas de centro" loading="lazy"><span>Mesas de centro</span></a>
+<a class="cat" href="#colecao"><img src="images/r08.jpg" alt="Poltronas" loading="lazy"><span>Poltronas</span></a>
+<a class="cat" href="#colecao"><img src="images/r06.jpg" alt="Candeeiros" loading="lazy"><span>Candeeiros</span></a>
+<a class="cat" href="#colecao"><img src="images/r22.jpg" alt="Decoração" loading="lazy"><span>Decoração</span></a>
     </div>
-  </div>
-</section><section class="shopify-section shopify-section--rustic-video"><video autoplay muted loop playsinline preload="metadata" src="videos/stock-2.mp4"></video></section>
+  </section>
 
-<section id="shopify-section-template--21619357450557__rustic-banner" class="shopify-section shopify-section--image-with-text-overlay"><style>
-  #shopify-section-template--21619357450557__rustic-banner {--section-outer-spacing-block: 0;--content-over-media-overlay: 0 0 0 / 0.25;}
-</style>
-  <div class="section section-blends section-full text-custom" style="--text-color: 255 255 255;">
-    <image-banner class="content-over-media content-over-media--lg full-bleed text-custom rustic-banner" style="--text-color: 255 255 255;"><img src="images/destaque.jpg" alt="Cadeira rústica em madeira e pedra" loading="lazy" sizes="100vw"><div class="place-self-center text-center sm:place-self-center sm:text-center text-align-center">
-      <div class="prose"><p class="h2">Móveis rústicos</p></div>
-    </div></image-banner>
-  </div>
-</section><section class="shopify-section shopify-section--rustic-video"><video autoplay muted loop playsinline preload="metadata" src="videos/stock-3.mp4"></video></section>
-<!-- BEGIN sections: footer-group -->
-<footer id="shopify-section-sections--21619356860733__footer" class="shopify-section shopify-section-group-footer-group shopify-section--footer"><style>
-  @media screen and (min-width: 1000px) {
-    #shopify-section-sections--21619356860733__footer {--footer-block-list-gap: var(--spacing-10);--footer-block-list-justify-content: space-between;
-    }
-  }
-</style><div class="footer" id="footer">
-  <div class="container">
-    <div class="footer__wrapper"><div class="footer__block-list empty:hidden"><div class="footer__block footer__block--text"><p class="bold">Sobre a RUSTIC</p><div class="prose text-subdued"><p>Móveis rústicos.</p></div></div><div class="footer__block footer__block--menu"><p class="bold">Apoio</p><ul class="v-stack gap-3" role="list"><li>
-                          <a href="#footer" class="inline-block link-faded break-all">Perguntas frequentes</a>
-                        </li><li>
-                          <a href="#footer" class="inline-block link-faded break-all">Garantia</a>
-                        </li><li>
-                          <a href="#footer" class="inline-block link-faded break-all">Contacta-nos</a>
-                        </li></ul>
-                  </div><div class="footer__block footer__block--menu"><p class="bold">Empresa</p><ul class="v-stack gap-3" role="list"><li>
-                          <a href="#footer" class="inline-block link-faded break-all">Sobre nós</a>
-                        </li><li>
-                          <a href="#footer" class="inline-block link-faded break-all">Política de privacidade</a>
-                        </li><li>
-                          <a href="#footer" class="inline-block link-faded break-all">Termos de serviço</a>
-                        </li></ul>
-                  </div></div><div class="footer__aside empty:hidden"><div class="footer__aside-top">
-          </div><div class="footer__aside-bottom">
-          <p class="footer__copyright text-sm text-subdued">© 2026 RUSTIC</p>
-        </div>
-      </div>
+  <section class="video-sec">
+    <video autoplay muted loop playsinline preload="metadata" src="videos/stock-1.mp4"></video>
+  </section>
+
+  <section class="wrap sec" id="colecao">
+    <p class="eyebrow">Coleção</p>
+    <h2 class="sec-title">Coleção — 43 peças</h2>
+    <div class="rule"></div>
+    <div class="grid">
+<article class="card"><img src="images/r01.jpg" alt="Mesa de apoio mármore" loading="lazy"><div class="card-info"><h3>Mesa de apoio mármore</h3><p class="price">24.500 MT</p></div></article>
+<article class="card"><img src="images/r02.jpg" alt="Banco escultural laranja" loading="lazy"><div class="card-info"><h3>Banco escultural laranja</h3><p class="price">48.000 MT</p></div></article>
+<article class="card"><img src="images/r03.jpg" alt="Mesa de apoio madeira curvada" loading="lazy"><div class="card-info"><h3>Mesa de apoio madeira curvada</h3><p class="price">28.500 MT</p></div></article>
+<article class="card"><img src="images/r04.jpg" alt="Mesa de apoio preta canelada" loading="lazy"><div class="card-info"><h3>Mesa de apoio preta canelada</h3><p class="price">26.000 MT</p></div></article>
+<article class="card"><img src="images/r05.jpg" alt="Mesa de centro pedra" loading="lazy"><div class="card-info"><h3>Mesa de centro pedra</h3><p class="price">52.000 MT</p></div></article>
+<article class="card"><img src="images/r06.jpg" alt="Candeeiro de pé argolas" loading="lazy"><div class="card-info"><h3>Candeeiro de pé argolas</h3><p class="price">38.000 MT</p></div></article>
+<article class="card"><img src="images/r07.jpg" alt="Mesa de centro onda" loading="lazy"><div class="card-info"><h3>Mesa de centro onda</h3><p class="price">58.000 MT</p></div></article>
+<article class="card"><img src="images/r08.jpg" alt="Poltrona madeira e bouclé" loading="lazy"><div class="card-info"><h3>Poltrona madeira e bouclé</h3><p class="price">72.000 MT</p></div></article>
+<article class="card"><img src="images/r09.jpg" alt="Cabide de parede triangular" loading="lazy"><div class="card-info"><h3>Cabide de parede triangular</h3><p class="price">22.000 MT</p></div></article>
+<article class="card"><img src="images/r10.jpg" alt="Mesa de apoio Z" loading="lazy"><div class="card-info"><h3>Mesa de apoio Z</h3><p class="price">27.500 MT</p></div></article>
+<article class="card"><img src="images/r11.jpg" alt="Mesa de sofá preta ripada" loading="lazy"><div class="card-info"><h3>Mesa de sofá preta ripada</h3><p class="price">24.000 MT</p></div></article>
+<article class="card"><img src="images/r12.jpg" alt="Mesa de apoio curva" loading="lazy"><div class="card-info"><h3>Mesa de apoio curva</h3><p class="price">29.000 MT</p></div></article>
+<article class="card"><img src="images/r13.jpg" alt="Par de mesas curvas bronze" loading="lazy"><div class="card-info"><h3>Par de mesas curvas bronze</h3><p class="price">46.000 MT</p></div></article>
+<article class="card"><img src="images/r14.jpg" alt="Mesa de sofá preta" loading="lazy"><div class="card-info"><h3>Mesa de sofá preta</h3><p class="price">23.500 MT</p></div></article>
+<article class="card"><img src="images/r15.jpg" alt="Mesa de apoio betão" loading="lazy"><div class="card-info"><h3>Mesa de apoio betão</h3><p class="price">27.000 MT</p></div></article>
+<article class="card"><img src="images/r16.jpg" alt="Mesa de apoio latão" loading="lazy"><div class="card-info"><h3>Mesa de apoio latão</h3><p class="price">34.000 MT</p></div></article>
+<article class="card"><img src="images/r17.jpg" alt="Mesa de apoio torcida" loading="lazy"><div class="card-info"><h3>Mesa de apoio torcida</h3><p class="price">36.500 MT</p></div></article>
+<article class="card"><img src="images/r18.jpg" alt="Mesa de apoio dourada" loading="lazy"><div class="card-info"><h3>Mesa de apoio dourada</h3><p class="price">33.000 MT</p></div></article>
+<article class="card"><img src="images/r19.jpg" alt="Cadeira escultural branca" loading="lazy"><div class="card-info"><h3>Cadeira escultural branca</h3><p class="price">54.000 MT</p></div></article>
+<article class="card"><img src="images/r20.jpg" alt="Mesa de centro ripada" loading="lazy"><div class="card-info"><h3>Mesa de centro ripada</h3><p class="price">48.500 MT</p></div></article>
+<article class="card"><img src="images/r21.jpg" alt="Mesa de apoio vazada" loading="lazy"><div class="card-info"><h3>Mesa de apoio vazada</h3><p class="price">25.500 MT</p></div></article>
+<article class="card"><img src="images/r22.jpg" alt="Relógio de parede pedra" loading="lazy"><div class="card-info"><h3>Relógio de parede pedra</h3><p class="price">24.000 MT</p></div></article>
+<article class="card"><img src="images/r23.jpg" alt="Par de poltronas bouclé" loading="lazy"><div class="card-info"><h3>Par de poltronas bouclé</h3><p class="price">128.000 MT</p></div></article>
+<article class="card"><img src="images/r24.jpg" alt="Mesa de apoio creme" loading="lazy"><div class="card-info"><h3>Mesa de apoio creme</h3><p class="price">29.500 MT</p></div></article>
+<article class="card"><img src="images/r25.jpg" alt="Par de mesas quadradas" loading="lazy"><div class="card-info"><h3>Par de mesas quadradas</h3><p class="price">42.000 MT</p></div></article>
+<article class="card"><img src="images/r26.jpg" alt="Mesa de apoio mármore e bronze" loading="lazy"><div class="card-info"><h3>Mesa de apoio mármore e bronze</h3><p class="price">35.000 MT</p></div></article>
+<article class="card"><img src="images/r27.jpg" alt="Mesa de apoio champanhe" loading="lazy"><div class="card-info"><h3>Mesa de apoio champanhe</h3><p class="price">32.500 MT</p></div></article>
+<article class="card"><img src="images/r28.jpg" alt="Mesa de apoio verde" loading="lazy"><div class="card-info"><h3>Mesa de apoio verde</h3><p class="price">31.000 MT</p></div></article>
+<article class="card"><img src="images/r29.jpg" alt="Mesa de apoio branca" loading="lazy"><div class="card-info"><h3>Mesa de apoio branca</h3><p class="price">26.500 MT</p></div></article>
+<article class="card"><img src="images/r30.jpg" alt="Mesa de centro vidro" loading="lazy"><div class="card-info"><h3>Mesa de centro vidro</h3><p class="price">56.000 MT</p></div></article>
+<article class="card"><img src="images/r31.jpg" alt="Mesa de apoio mármore preto" loading="lazy"><div class="card-info"><h3>Mesa de apoio mármore preto</h3><p class="price">33.500 MT</p></div></article>
+<article class="card"><img src="images/r32.jpg" alt="Mesa de apoio semicircular" loading="lazy"><div class="card-info"><h3>Mesa de apoio semicircular</h3><p class="price">28.000 MT</p></div></article>
+<article class="card"><img src="images/r33.jpg" alt="Mesa de apoio bronze" loading="lazy"><div class="card-info"><h3>Mesa de apoio bronze</h3><p class="price">31.500 MT</p></div></article>
+<article class="card"><img src="images/r34.jpg" alt="Mesa de apoio castanha" loading="lazy"><div class="card-info"><h3>Mesa de apoio castanha</h3><p class="price">25.000 MT</p></div></article>
+<article class="card"><img src="images/r35.jpg" alt="Mesa de apoio seixos" loading="lazy"><div class="card-info"><h3>Mesa de apoio seixos</h3><p class="price">34.500 MT</p></div></article>
+<article class="card"><img src="images/r36.jpg" alt="Mesa de apoio carvalho" loading="lazy"><div class="card-info"><h3>Mesa de apoio carvalho</h3><p class="price">27.500 MT</p></div></article>
+<article class="card"><img src="images/r37.jpg" alt="Conjunto de mesas geométricas" loading="lazy"><div class="card-info"><h3>Conjunto de mesas geométricas</h3><p class="price">68.000 MT</p></div></article>
+<article class="card"><img src="images/r38.jpg" alt="Candeeiro escultural cinzento" loading="lazy"><div class="card-info"><h3>Candeeiro escultural cinzento</h3><p class="price">29.000 MT</p></div></article>
+<article class="card"><img src="images/r39.jpg" alt="Mesas de centro madeira escura" loading="lazy"><div class="card-info"><h3>Mesas de centro madeira escura</h3><p class="price">44.000 MT</p></div></article>
+<article class="card"><img src="images/r40.jpg" alt="Materiais" loading="lazy"><div class="card-info"><h3>Materiais</h3><p class="caption">Madeiras, mármores, metais e tecidos da coleção</p></div></article>
+<article class="card"><img src="images/r41.jpg" alt="Conjunto de mesas curvas" loading="lazy"><div class="card-info"><h3>Conjunto de mesas curvas</h3><p class="price">64.000 MT</p></div></article>
+<article class="card"><img src="images/r42.jpg" alt="Par de mesas curvas bege" loading="lazy"><div class="card-info"><h3>Par de mesas curvas bege</h3><p class="price">44.000 MT</p></div></article>
+<article class="card"><img src="images/r43.jpg" alt="Bancos de bar" loading="lazy"><div class="card-info"><h3>Bancos de bar</h3><p class="price">96.000 MT</p></div></article>
     </div>
-  </div>
-</div>
+  </section>
 
-<style> #shopify-section-sections--21619356860733__footer .footer__block-list {column-gap: 10px;} </style></footer>
-<!-- END sections: footer-group --></main>
-  <style> footer {--footer-block-list-gap: 10px;} </style>
+  <section class="video-sec">
+    <video autoplay muted loop playsinline preload="metadata" src="videos/stock-2.mp4"></video>
+  </section>
 
+  <section class="wrap sec">
+    <figure class="banner">
+      <img src="images/destaque.jpg" alt="Cadeira rústica em madeira e pedra" loading="lazy">
+      <figcaption class="banner-cap">
+        <p class="eyebrow">Destaque</p>
+        <h2 class="sec-title">Móveis rústicos</h2>
+      </figcaption>
+    </figure>
+  </section>
 
-
-
-<style>
-
-
-
-
-.shopify-section--rustic-video{background:#000}
-.shopify-section--rustic-video video{display:block;width:100%;max-height:80vh;margin:0 auto;object-fit:contain;background:#000}
-</style></body></html>
+  <section class="video-sec">
+    <video autoplay muted loop playsinline preload="metadata" src="videos/stock-3.mp4"></video>
+  </section>
+</main>
+<footer id="footer">
+  <a class="brand" href="#">RUSTIC</a>
+  <p>Móveis rústicos</p>
+  <p class="copy">© 2026 RUSTIC</p>
+</footer>
+</body>
+</html>
